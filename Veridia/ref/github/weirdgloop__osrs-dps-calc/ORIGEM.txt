@@ -1,0 +1,25 @@
+Repositório: https://github.com/weirdgloop/osrs-dps-calc
+Branch: main
+Commit (git rev-parse HEAD): 89c3e25b344aea90d0189746e4b5f73dde0f0383
+Data do commit: 2026-09-02T18:18:56+00:00
+Mensagem do commit: Add Seeking broad arrows to isWearingLeafBladedWeapon (#967)
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/weirdgloop__osrs-dps-calc
+Tipo de clone: Clone parcial (sparse): cdn/json + scripts. Padrões sparse: /LICENSE /README.md /cdn/json/ /scripts/
+Tamanho no disco (com .git): 6.9M
+Licença (lida do arquivo): GPL-3.0 — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=58 forks=91 pushed_at=2026-09-16T17:23:25Z arquivado=false
+Pastas relevantes:
+  - cdn/json/monsters.json (atributos de combate por monstro)
+  - cdn/json/equipment.json
+  - scripts/ (geração a partir da wiki)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - nenhum
+Varredura de ofuscação: bins=|class=0|allatori_zkm=0|linhas>3000=0
+Observações: GPL-3.0. Último commit 02/09/2026.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/weirdgloop/osrs-dps-calc
+  git sparse-checkout set --no-cone '/LICENSE' '/README.md' '/cdn/json/' '/scripts/'
+  git fetch --depth 1 --filter=blob:none origin 89c3e25b344aea90d0189746e4b5f73dde0f0383
+  git checkout FETCH_HEAD

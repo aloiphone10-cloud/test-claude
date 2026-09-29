@@ -1,0 +1,30 @@
+# query: https://api.github.com/search/repositories?q=topic:runelite&sort=stars&per_page=20 (2026-09-29; total_count=179)
+runelite/plugin-hub|392|2804|2026-09-29T05:02:05Z|false|BSD-2-Clause|18485|null|false|External plugins for RuneLite
+melkypie/resource-packs|77|111|2026-09-25T18:42:19Z|false|BSD-2-Clause|127486|Java|false|UI resource packs
+pajlads/DinkPlugin|66|42|2026-09-28T14:16:23Z|false|BSD-2-Clause|2907|Java|false|Discord notifications
+Bot-detector/bot-detector|61|8|2025-12-02T17:11:48Z|false|BSD-2-Clause|753|Java|false|bot detector plugin
+Arnuh/RuneLiteHijack|43|26|2024-02-03T03:35:44Z|false|BSD-2-Clause|62|Java|false|Adds a configurable external plugin hub to RuneLite
+jmakhack/hydrate-reminder|27|53|2024-03-01T12:26:17Z|false|BSD-2-Clause|569|Java|false|reminders
+Jrod7938/JRPlugins|21|18|2025-08-07T03:45:53Z|true|AGPL-3.0|21366|Java|false|JR PLUGINS for RuneLite
+Enriath/external-plugins|19|26|2026-04-27T14:30:21Z|false|BSD-2-Clause|633|null|false|external plugin code
+alanbaumgartner/Easyscape|15|4|2019-07-15T00:18:03Z|true|MIT|33377|Java|false|Runelite plugin to make Runescape easier (ARCHIVED)
+jamiegyoung/runemarkers|11|13|2026-07-27T01:49:09Z|false|MIT|1001|Go|false|tile markers collection
+runetopic/openosrs|10|7|2024-01-17T15:19:29Z|false|BSD-2-Clause|111931|Java|false|
+2009scape/Dumps|10|4|2023-04-01T07:34:40Z|false|null|977666|null|false|2009 dumps
+Matsyir/pvp-performance-tracker|9|20|2026-07-24T15:53:32Z|false|BSD-2-Clause|2188|Java|false|PvP tracker
+# query: https://api.github.com/search/repositories?q=topic:osrs&sort=stars&per_page=20 (2026-09-29; total_count=475)
+slyautomation/osrs_basic_botting_functions|246|75|2023-12-15T10:34:47Z|false||20162|Python|false|Functions for automating osrs botting using Python.
+blurite/rsprot|75|28|2026-09-14T22:25:39Z|false|MIT|5951|Kotlin|false|RSProt networking package for RSPS
+RuneStar/client|74|30|2021-02-18T21:18:20Z|false|AGPL-3.0|4912|Kotlin|false|Old School RuneScape client
+RuneStar/leaks|66|14|2021-09-16T05:04:00Z|false||37623||false|Public information about RuneScape internals
+Bot-detector/bot-detector|65|35|2026-04-21T02:25:24Z|false|GPL-3.0|56556|Java|false|bot detector
+# query: https://api.github.com/search/repositories?q=unethicalite+in:name&sort=updated&per_page=20 (2026-09-29; total_count=15)
+Oxlyntia/unethicalite|0|0|2025-02-09T19:35:16Z|false|BSD-2-Clause|10131|Java|false|
+4vvshah/unethicalite-plugins-release|0|1|2022-12-07T00:04:21Z|false|GPL-3.0|380|Java|false|
+kyle-escobar/open-unethicalite|0|3|2022-09-28T08:53:08Z|false|BSD-2-Clause|110568|Java|false|
+zmike808/unethicalite-free|0|2|2022-09-13T15:30:13Z|false|BSD-2-Clause|110027||false|
+ur8m8/unethicalite|0|0|2022-08-06T12:06:36Z|false|GPL-3.0|8929|Java|false|
+Mcglaren/unethicalite-plugins|1|14|2022-08-06T08:32:43Z|false|GPL-3.0|2496||false|
+arthiman/unethicalite-hosting|0|7|2022-07-17T18:58:46Z|false||889587||false|(binarios hospedados)
+bdonndon/unethicalite-launcher|0|22|2022-07-08T12:03:55Z|false|BSD-2-Clause|1198||false|
+sandymandy12/unethicalite-plugins|2|50|2022-05-05T01:57:50Z|true|GPL-3.0|8745|Java|false|

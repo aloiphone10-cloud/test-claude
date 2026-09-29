@@ -1,0 +1,10 @@
+# query: https://api.github.com/search/repositories?q=microbot+in:name,description&sort=updated&order=desc&per_page=60 (coletado 2026-09-29; total_count=564; WebFetch truncou em ~19 itens)
+# formato: full_name|stars|forks|pushed_at|archived|license|size_kb|lang|fork|desc
+microsoft/microbots|38|21|2026-09-29T05:36:31Z|false|MIT|3316|Python|false|
+chsami/Microbot-Hub|22|188|2026-09-28T20:31:57Z|false|BSD-2-Clause|94433|Java|false|Create your Microbot Plugins in the Microbot Hub
+chsami/Microbot|205|570|2026-09-29T03:09:14Z|false|BSD-2-Clause|172303|Java|false|Modified Version of the Open source Runelite client
+JogOnJohn/microbot-shortest-path-sync|0|0|2026-09-26T06:33:09Z|false|BSD-2-Clause|40|Python|false|Deterministic upstream shortest-path transport data sync for Microbot
+RLitePlus/Microbot-Releases|1|2|2026-09-24T01:45:04Z|false||13840||false|A collection of plugins developed for Microbot
+theShirina/shirs-raid-builder|0|0|2026-09-22T12:35:33Z|false|MIT|396|Lua|false|Raid hiring, companion setup and subgroup layouts for Microbot (WoW addon? verificar)
+renancavalcantercb/cutguardian-microbot-plugins|0|0|2026-09-22T04:44:31Z|false||221|Java|false|
+Licentiia/ruinelite-microbot|1|0|2026-09-21T02:07:42Z|false|BSD-2-Clause|140445|Java|false|

@@ -1,0 +1,9 @@
+# query: https://api.github.com/search/repositories?q=OsrsBot+in:name+fork:true&sort=updated&per_page=20 (2026-09-29; total_count=148)
+# formato: full_name|stars|forks|pushed_at|created_at|archived|fork|license|size|lang|desc
+filpod/OsrsBot|0|0|2026-05-21T03:49:38Z|2026-05-21T02:57:05Z|false|true|GPL-3.0|27555|Java|fork OSRSB/OsrsBot
+jomack-silvey/OsrsBot|0|0|2026-02-22T22:16:08Z|2026-02-22T22:15:36Z|false|true|GPL-3.0|92922||fork OSRSB/OsrsBot
+NubeBuster/OsrsBot|0|0|2025-04-24T20:46:37Z|2023-07-08T22:59:55Z|false|true|GPL-3.0|45075|Java|fork OSRSB/OsrsBot
+OSRSB/OsrsBot|165|75|2025-02-07T13:31:05Z|2019-07-04T21:06:54Z|false|false|GPL-3.0|45061|Java|A RuneLite bot automation extension API for OSRS
+GigiaJ/OsrsBot|1|0|2025-02-07T13:29:46Z|2022-02-17T23:33:23Z|false|true|GPL-3.0|45074|Java|fork OSRSB/OsrsBot
+Leespiker/OsrsBot|0|0|2024-08-15T14:50:24Z|2024-11-10T22:13:46Z|false|true|GPL-3.0|45080|Java|fork OSRSB/OsrsBot
+Truelitepk/OSRSBots|0|0|2025-06-23T03:30:00Z|2025-06-06T12:46:05Z|false|false||1275||The OSRS Botting Project

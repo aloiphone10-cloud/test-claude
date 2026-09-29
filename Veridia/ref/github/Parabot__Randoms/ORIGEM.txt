@@ -1,0 +1,23 @@
+Repositório: https://github.com/Parabot/Randoms
+Branch: master
+Commit (git rev-parse HEAD): ee4717f0d46059b30f9953983b3278307fee5546
+Data do commit: 2018-11-14T13:23:23-06:00
+Mensagem do commit: Merge pull request #63 from Parabot/development
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/Parabot__Randoms
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 352K
+Licença (lida do arquivo): sem arquivo de licença — arquivo: (nenhum arquivo de licença na raiz)
+Metadados da API (coleta 2026-09-29): estrelas=5 forks=6 pushed_at=2019-05-04T23:32:01Z arquivado=false
+Pastas relevantes:
+  - src/main/java/org/parabot/randoms/pkhonor/ (Jail, SandwichLady, MysteriousOldMan, BobsIsland, CombatStone)
+  - src/main/java/org/parabot/randoms/elkoy/QuestionSolver.java
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - nenhum
+Varredura de ofuscação: bins=|class=0|allatori_zkm=0|linhas>3000=0
+Observações: SEM LICENÇA. FileBan/BanFile/AntiDetector/MacAddressFix/RandomUUID = evasão de ban: fora de escopo.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/Parabot/Randoms
+  git fetch --depth 1 origin ee4717f0d46059b30f9953983b3278307fee5546
+  git checkout FETCH_HEAD

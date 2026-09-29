@@ -1,0 +1,12 @@
+# query: https://api.github.com/search/repositories?q=user:chsami user:Skretzo user:osrs-pathfinding user:Explv user:Zoinkwiz&sort=updated&per_page=20 (2026-09-29; total_count=48; pagina 1)
+chsami/Microbot-Hub|22|188|2026-09-28T20:31:57Z|false|BSD-2-Clause|94433|Java|false|Microbot Plugins hub
+chsami/Microbot|205|570|2026-09-29T03:09:14Z|false|BSD-2-Clause|172303|Java|false|Modified RuneLite client
+osrs-pathfinding/shortest-path-tooling|0|4|2026-09-28T19:33:40Z|false|null|763|Python|false|Developer dashboards and OSRS cache dumpers for shortest-path
+osrs-pathfinding/shortest-path-hs|0|0|2026-09-26T19:27:45Z|false|BSD-3-Clause|967|Haskell|false|Haskell implementation of OSRS shortest path algorithms
+Zoinkwiz/3d-recorder|2|0|2026-09-24T23:38:59Z|false|BSD-2-Clause|135|Java|false|
+osrs-pathfinding/shortest-path-corpus|0|0|2026-09-22T21:14:42Z|false|null|257|Java|false|routes for benchmarking shortest path
+Zoinkwiz/quest-helper|309|544|2026-09-27T13:19:46Z|false|BSD-2-Clause|22539|Java|false|Helps with Quests.
+Zoinkwiz/clue-details|0|10|2026-09-15T23:16:24Z|false|BSD-2-Clause|551|Java|false|clue info
+chsami/Microbot-Launcher|4|14|2026-07-12T17:34:37Z|false|GPL-3.0|37339|JavaScript|false|Microbot Launcher
+Explv/Explv.github.io|49|88|2026-05-09T16:14:06Z|false|null|1724|JavaScript|false|Explv's Map
+Skretzo/runelite-plugins|0|0|2024-12-10T02:41:35Z|false|null|4055|Java|false|

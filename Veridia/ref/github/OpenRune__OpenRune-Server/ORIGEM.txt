@@ -1,0 +1,26 @@
+Repositório: https://github.com/OpenRune/OpenRune-Server
+Branch: main
+Commit (git rev-parse HEAD): 065ebc9eb2fe0e5070b925d5aac254edf20443ea
+Data do commit: 2026-09-28T14:35:00+01:00
+Mensagem do commit: Gemstone Crab (#254)
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/OpenRune__OpenRune-Server
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 57M
+Licença (lida do arquivo): ISC — arquivo: LICENSE.md
+Metadados da API (coleta 2026-09-29): estrelas=30 forks=48 pushed_at=2026-09-28T13:35:01Z arquivado=false
+Pastas relevantes:
+  - .data/raw-cache/server/shops/*.toml (lojas)
+  - .data/raw-cache/map/npcs/random_event_*.toml
+  - content/ (módulos de conteúdo)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+  - plugins/example-plugin.jar
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;plugins/example-plugin.jar;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: ISC (texto do RS Mod). Fork modular de RSMod/Alter.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/OpenRune/OpenRune-Server
+  git fetch --depth 1 origin 065ebc9eb2fe0e5070b925d5aac254edf20443ea
+  git checkout FETCH_HEAD

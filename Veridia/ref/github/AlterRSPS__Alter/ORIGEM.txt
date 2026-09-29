@@ -1,0 +1,25 @@
+Repositório: https://github.com/AlterRSPS/Alter
+Branch: main
+Commit (git rev-parse HEAD): 9ddbbbe3bdf47d79ff919a12d01ce1a7e6be6169
+Data do commit: 2025-10-26T21:44:54+01:00
+Mensagem do commit: Added serval things (#125)
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/AlterRSPS__Alter
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 24M
+Licença (lida do arquivo): BSD-2-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=81 forks=74 pushed_at=2025-10-26T20:44:55Z arquivado=false
+Pastas relevantes:
+  - game-plugins/src/main/kotlin/org/alter/plugins/content/skills/thieving/stall/
+  - data/cfg/thieving/stalls.json
+  - game-server/src/main/kotlin/org/alter/game/model/instance/
+  - game-server/src/main/kotlin/org/alter/game/model/shop/
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: BSD-2. Servidor OSRS (Kotlin, derivado do RSMod v1).
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/AlterRSPS/Alter
+  git fetch --depth 1 origin 9ddbbbe3bdf47d79ff919a12d01ce1a7e6be6169
+  git checkout FETCH_HEAD

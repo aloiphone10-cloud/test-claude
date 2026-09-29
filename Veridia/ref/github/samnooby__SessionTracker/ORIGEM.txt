@@ -1,0 +1,24 @@
+Repositório: https://github.com/samnooby/SessionTracker
+Branch: master
+Commit (git rev-parse HEAD): ecbd46461d4cb0a565b6a2cf71f83f9f7d86e536
+Data do commit: 2026-09-21T08:15:06-04:00
+Mensagem do commit: Merge pull request #40 from samnooby/claude/track-open-storage-bags
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/samnooby__SessionTracker
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 1.3M
+Licença (lida do arquivo): BSD-2-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=0 forks=0 pushed_at=2026-09-21T12:15:11Z arquivado=false
+Pastas relevantes:
+  - src/test/java/com/sessiontracker/ (37 arquivos de teste; SessionTrackerPluginRun, Fixtures)
+  - src/main/java/com/sessiontracker/core/ (núcleo sem RuneLite)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: BSD-2.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/samnooby/SessionTracker
+  git fetch --depth 1 origin ecbd46461d4cb0a565b6a2cf71f83f9f7d86e536
+  git checkout FETCH_HEAD

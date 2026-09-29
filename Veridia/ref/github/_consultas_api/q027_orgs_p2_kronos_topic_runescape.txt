@@ -1,0 +1,19 @@
+# query: https://api.github.com/search/repositories?q=user:rsmod user:blurite user:openrs2 user:Parabot user:OSRSB&sort=updated&per_page=20&page=2 (2026-09-29)
+Parabot/Parabot|45|36|2021-11-27T12:12:33Z|false|GPL-3.0|18869|Java|false|Open Source RSPS Bot
+openrs2/openrs2-natives-all|0|0|2021-01-31T09:43:51Z|false|ISC|35|null|false|prebuilt natives jar
+Parabot/Parabot-317-API-Minified-RuneWild|0|2|2020-12-05T15:01:23Z|false|GPL-2.0|44|Java|false|
+Parabot/Internal-API|5|6|2020-11-28T11:16:46Z|false|null|178|Java|false|Internal API for Parabot
+Parabot/Parabot-317-API-Minified-Dreamscape|2|1|2020-04-02T13:31:27Z|false|GPL-2.0|164|Java|false|
+Parabot/Randoms|5|6|2019-05-04T23:32:01Z|false|null|2318|Java|false|The Parabot randoms
+Parabot/Parabot-317-API-Minified-PkHonor|2|1|2018-10-18T22:20:57Z|false|GPL-2.0|385|Java|false|
+Parabot/Parabot-317-API-Minified-RoatzPK|2|2|2018-09-12T15:53:41Z|false|GPL-2.0|23|Java|false|
+Parabot/Parabot-317-API-Minified-SoulPlay|0|1|2018-09-12T01:04:59Z|false|GPL-2.0|82|Java|false|
+Parabot/Parabot-317-API-Minified-OS-Scape|2|1|2017-07-04T11:05:27Z|false|GPL-3.0|230|Java|false|adjusted API for OS-Scape (servidor com dados OSRS)
+Parabot/Parabot-CLI|2|0|2017-08-22T17:36:30Z|false|null|2039|JavaScript|false|CLI
+# query: https://api.github.com/search/repositories?q=kronos+language:java&sort=stars&per_page=20 (2026-09-29; total_count=142, maioria ruido)
+Leif-Yggdrasil/Kronos-184-Fixed|12|18|2026-07-05T11:41:42Z|false||15412|Java|false|Fixed version of Kronos so the whole project builds properly including runelite.
+The-RSPS-Archive/184---Kronos-Source|7|5|2024-12-25T12:50:36Z|false||69991|Java|false|
+MatthewBishop/Kronos184-Client|3|3|2024-09-25T13:56:00Z|false|BSD-2-Clause|8780|Java|false|
+TuringProblem/Okronos|2|6|2026-05-15T00:15:33Z|false||200969|Java|false|Open-sourced version of Kronos
+# query: https://api.github.com/search/repositories?q=topic:runescape&sort=stars&per_page=20 (2026-09-29; total_count=597)
+2003scape/rsc-c|128|22|2026-07-16T22:48:40Z|false|AGPL-3.0|113781|C|false|runescape classic client ported to C

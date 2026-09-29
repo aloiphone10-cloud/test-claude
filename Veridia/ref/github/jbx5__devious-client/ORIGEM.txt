@@ -1,0 +1,24 @@
+Repositório: https://github.com/jbx5/devious-client
+Branch: master
+Commit (git rev-parse HEAD): 63187b0d77dd2e9e0dacd57de0bb0c5397e23e9b
+Data do commit: 2024-06-27T08:52:59-07:00
+Mensagem do commit: Merge remote-tracking branch 'origin/development'
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/jbx5__devious-client
+Tipo de clone: Clone parcial (sparse): API net/unethicalite + CollisionMapDumper. Padrões sparse: /LICENSE /README.md /runelite-client/src/main/java/net/unethicalite/ /cache/src/main/java/net/runelite/cache/CollisionMapDumper.java
+Tamanho no disco (com .git): 3.0M
+Licença (lida do arquivo): BSD-2-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=83 forks=164 pushed_at=2024-10-10T15:46:36Z arquivado=false
+Pastas relevantes:
+  - runelite-client/src/main/java/net/unethicalite/api/movement/pathfinder/ (Pathfinder, CollisionMap, TransportLoader, TeleportLoader, Walker)
+  - cache/src/main/java/net/runelite/cache/CollisionMapDumper.java (gera mapa de colisão a partir do cache + XTEA)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - nenhum
+Varredura de ofuscação: bins=|class=0|allatori_zkm=0|linhas>3000=0
+Observações: Cliente modificado (mixins). BSD-2. Último commit na branch padrão: 27/06/2024.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/jbx5/devious-client
+  git sparse-checkout set --no-cone '/LICENSE' '/README.md' '/runelite-client/src/main/java/net/unethicalite/' '/cache/src/main/java/net/runelite/cache/CollisionMapDumper.java'
+  git fetch --depth 1 --filter=blob:none origin 63187b0d77dd2e9e0dacd57de0bb0c5397e23e9b
+  git checkout FETCH_HEAD

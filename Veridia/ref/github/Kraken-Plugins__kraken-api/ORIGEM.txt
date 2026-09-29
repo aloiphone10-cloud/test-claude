@@ -1,0 +1,27 @@
+Repositório: https://github.com/Kraken-Plugins/kraken-api
+Branch: master
+Commit (git rev-parse HEAD): 44b4a0a2f2bb883613c1f5dd6d647906d0736099
+Data do commit: 2026-09-18T19:28:19-04:00
+Mensagem do commit: Merge pull request #227 from Kraken-Plugins/develop
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/Kraken-Plugins__kraken-api
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 15M
+Licença (lida do arquivo): GPL-3.0 — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=8 forks=8 pushed_at=2026-09-28T15:00:48Z arquivado=n/d
+Pastas relevantes:
+  - src/main/java/com/kraken/api/service/shop/ (ShopService: Buy X, teto de moedas, StopReason)
+  - src/main/java/com/kraken/api/query/ (bank, inventory, shop, npc, gameobject...)
+  - src/main/java/com/kraken/api/core/interaction/ (resolvers de MenuAction; DoActionInvoker por reflexão)
+  - src/main/java/com/kraken/api/core/script/ (Task, PriorityTask)
+  - src/test/ (173 arquivos; 82 em src/test/java/unit)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: GPL-3.0. A interação usa reflexão sobre o cliente oficial (hooks) — substituir por client.menuAction. Módulos mouse/, breakhandler/ = fora de escopo.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/Kraken-Plugins/kraken-api
+  git fetch --depth 1 origin 44b4a0a2f2bb883613c1f5dd6d647906d0736099
+  git checkout FETCH_HEAD

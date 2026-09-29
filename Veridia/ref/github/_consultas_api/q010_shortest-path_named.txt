@@ -1,0 +1,4 @@
+# query: https://api.github.com/search/repositories?q=shortest-path+in:name+fork:true+pathfinding&sort=updated&per_page=20 (2026-09-29; total_count=41; so os 3 primeiros sao OSRS)
+osrs-pathfinding/shortest-path-tooling|0|4|2026-09-28T19:33:40Z|2026-04-27T01:43:59Z|false|false|763|Python|Developer dashboards and OSRS cache dumpers for
+osrs-pathfinding/shortest-path-hs|0|0|2026-09-26T19:27:45Z|2026-09-18T12:05:00Z|false|false|967|Haskell|Haskell implementaton of OSRS shortest path algorit
+osrs-pathfinding/shortest-path-corpus|0|0|2026-09-22T21:14:42Z|2026-09-18T13:19:33Z|false|false|257|Java|Account profiles and routes for benchmarking

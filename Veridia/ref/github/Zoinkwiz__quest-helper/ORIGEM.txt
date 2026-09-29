@@ -1,0 +1,25 @@
+Repositório: https://github.com/Zoinkwiz/quest-helper
+Branch: master
+Commit (git rev-parse HEAD): 75b623a6bc14237831fddc10b44765c0910a4eb0
+Data do commit: 2026-09-16T09:32:12+01:00
+Mensagem do commit: TempleOfTheEye fix tea step condition (#2832)
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/Zoinkwiz__quest-helper
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 16M
+Licença (lida do arquivo): BSD-2-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=309 forks=544 pushed_at=2026-09-27T13:19:46Z arquivado=false
+Pastas relevantes:
+  - src/main/java/com/questhelper/requirements/
+  - src/main/java/com/questhelper/steps/ (NpcStep, ObjectStep, DetailedQuestStep...)
+  - src/test/java/com/questhelper/MockedTestBase.java
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=1
+Observações: BSD-2.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/Zoinkwiz/quest-helper
+  git fetch --depth 1 origin 75b623a6bc14237831fddc10b44765c0910a4eb0
+  git checkout FETCH_HEAD

@@ -1,0 +1,10 @@
+# query: https://api.github.com/search/repositories?q=ethanapi OR piggyplugins OR "ethan vann"&sort=updated&order=desc&per_page=20 (2026-09-29; total_count=12)
+ejslee512/ethanAPI.github.io|0|0|2026-09-08T23:19:53Z|false|null|2078|HTML|false|
+Fauzan-Aldi/EthanVannPlugins|0|0|2026-04-20T11:43:44Z|false|AGPL-3.0|3939|Java|false|
+BerrysBad/BadPlugins-Public|0|0|2024-07-31T06:54:13Z|false|AGPL-3.0|7066|Java|false|Public 'fork' of PiggyPlugins
+TheAdversaryB/RunebotClientAPI|1|1|2024-07-21T14:45:49Z|false|AGPL-3.0|4384|null|false|Main Ethan-Vanns Fork
+zmike808/EthansApi|0|0|2024-05-25T02:20:59Z|false|null|219|null|false|Automatically extracted from 0Hutch/PiggyPlugins
+Runemker/PiggyPlugins|0|1|2024-03-06T06:13:03Z|true|AGPL-3.0|6156|Java|false|
+JP-Plugins/git-github.com-Ethan-Vann-EthanVannPlugins|0|0|2024-02-23T04:08:23Z|false|AGPL-3.0|3947|Java|false|
+Ethan-Vann/EthanVannLibrary|4|6|2023-12-29T08:08:34Z|false|null|105|Java|false|
+WyjhoO/PiggyPluginsRelease|0|0|2023-09-07T06:45:29Z|false|AGPL-3.0|12253|null|false|

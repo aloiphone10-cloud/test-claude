@@ -1,0 +1,23 @@
+Repositório: https://github.com/Parabot/Parabot-317-API-Minified
+Branch: master
+Commit (git rev-parse HEAD): 8ba051610acf239e0b0c4a0f45eaf96abb24a40f
+Data do commit: 2019-05-22T21:39:43-05:00
+Mensagem do commit: Merge pull request #108 from Parabot/development
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/Parabot__Parabot-317-API-Minified
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 764K
+Licença (lida do arquivo): GPL-2.0 — arquivo: LICENSE.md
+Metadados da API (coleta 2026-09-29): estrelas=7 forks=15 pushed_at=2022-02-19T19:49:16Z arquivado=false
+Pastas relevantes:
+  - src/main/java/org/rev317/min/api/methods/ (Bank, Npcs, SceneObjects, Walking, Menu, Inventory)
+  - src/main/java/org/rev317/min/accessors/ (interfaces de hooks do cliente 317)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - nenhum
+Varredura de ofuscação: bins=|class=0|allatori_zkm=0|linhas>3000=0
+Observações: GPL-2.0. Cliente 317 com hooks (cliente modificado).
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/Parabot/Parabot-317-API-Minified
+  git fetch --depth 1 origin 8ba051610acf239e0b0c4a0f45eaf96abb24a40f
+  git checkout FETCH_HEAD

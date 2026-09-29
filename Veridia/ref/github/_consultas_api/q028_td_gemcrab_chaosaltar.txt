@@ -1,0 +1,19 @@
+# query: https://api.github.com/search/repositories?q="tormented demon" OR "tormented demons" OR "gemstone crab" OR "chaos altar"&sort=updated&per_page=20 (2026-09-29; total_count=24)
+K0KS13/afk-companion|0|0|2026-09-19T11:42:28Z|false|BSD-2-Clause|135|Java|false|RuneLite plugin: Gemstone Crab burrow timer plus phone notifications
+psihosrs/tormented-demon-effects-hider|0|0|2026-07-03T19:22:50Z|false|BSD-2-Clause|55|Java|false|Hides the fire effects on Tormented Demons
+Niama7/gemstone-crab-bot|0|0|2026-05-11T00:29:25Z|false|null|12|Java|false|
+ShaneeexD/GemstoneCrabTimer|2|5|2026-04-14T01:19:08Z|false|BSD-2-Clause|146|Java|false|
+dxiong0020/gemstone-crab-afk|0|0|2026-03-20T02:34:20Z|false|null|55|Java|false|
+TheRealGuru/tormented-demons|0|0|2026-02-08T23:55:34Z|false|null|46|Java|false|Runelite plugin for tormented demons
+DarkWarChief/tormented-demon-helper|0|0|2026-02-04T02:05:55Z|false|null|46|Java|false|
+jmccarey/crab-scouter|0|0|2026-02-03T00:06:19Z|false|BSD-2-Clause|69|Java|false|Crowdsourced Gemstone Crab scouting
+1Andrewcoleman/Gemstone-Crab-Alert|0|0|2026-01-19T17:38:49Z|false|BSD-2-Clause|56|Java|false|screen flash when you reach...
+Nealon01/gemstone-crab-notifier|0|0|2025-10-27T17:35:31Z|false|BSD-2-Clause|4|Java|false|Pushover notifications
+Tubers/crab-alch|0|0|2025-09-26T03:23:05Z|false|BSD-2-Clause|54|Java|false|Gemstone crab high alchemy item filter
+IanMcNelly/crab-crowd-counter|0|0|2025-08-26T02:58:36Z|false|BSD-2-Clause|623|Java|false|counter of people attacking the Gemstone Crab
+SeanPino/GemstoneCrabPlugin|0|0|2025-07-26T20:49:51Z|false|BSD-2-Clause|61|Java|false|helpful tools surrounding the gemstone crab
+kjellandree/GemCrab|0|0|2025-07-24T00:12:11Z|false|null|46|Java|false|Runelite plugin to track Gemstone Crab
+mpr120/Tormented_Demon|0|0|2025-05-12T13:08:27Z|false|BSD-2-Clause|59|Java|false|visual overlay counter for Tormented Demons
+mantassiniauskas1/tormented-demons|0|0|2025-05-09T07:35:02Z|false|null|46|Java|false|
+# query: https://api.github.com/search/repositories?q=cannonball OR chinchompa OR "stall thieving" OR "thieving stall" osrs&sort=updated (2026-09-29; OR amplo virou "osrs"; so ruido)
+babaali131718-spec/rs2b0t-quest-forge|0|0|2026-09-29T07:01:36Z|false|null|660|HTML|false|"Scriptable RS Bot for 2004scape Private Servers 2026" (padrao de isca; suspeito)

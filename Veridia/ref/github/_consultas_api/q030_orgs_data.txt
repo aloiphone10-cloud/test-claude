@@ -1,0 +1,13 @@
+# query: https://api.github.com/search/repositories?q=user:weirdgloop user:osrs-wiki user:RuneStar user:abextm user:mejrs&sort=stars&per_page=20 (2026-09-29; total_count=95)
+RuneStar/client|74|30|2021-02-18T21:18:20Z|false|AGPL-3.0|4912|Kotlin|false|Old School RuneScape client
+RuneStar/leaks|66|14|2021-09-16T05:04:00Z|false||37623||false|Public information about RuneScape internals
+weirdgloop/osrs-dps-calc|58|91|2026-09-16T17:23:25Z|false|GPL-3.0|206531|TypeScript|false|Web-based DPS calculator for OSRS
+RuneStar/cs2-scripts|58|12|2021-09-16T04:56:54Z|false||7462||false|OSRS cs2 scripts
+RuneStar/cs2|45|20|2021-08-25T09:10:26Z|false|AGPL-3.0|4209|Kotlin|false|cs2 decompiler
+mejrs/rs3cache|33|6|2026-07-07T11:01:24Z|false|MIT|97039|Rust|false|RS cache tools (tambem OSRS?)
+RuneStar/cache-names|29|9|2021-09-16T04:49:55Z|false|MIT|12001|Kotlin|false|cache file names
+mejrs/mejrs.github.io|28|34|2026-08-02T20:11:04Z|false||1806|JavaScript|false|RuneScape Cartography
+weirdgloop/mediawiki-extensions-Bucket|24|16|2026-09-23T14:56:52Z|false|NOASSERTION|573|PHP|false|MediaWiki Bucket extension
+mejrs/data_osrs|12|5|2026-07-02T11:48:14Z|false||61143||false|
+weirdgloop/WikiSync|12|11|2026-03-26T13:12:33Z|false|BSD-2-Clause|163|Java|false|
+RuneStar/cache|12|6|2021-03-28T00:14:18Z|false|MIT|714|Java|false|Request and read OSRS cache files

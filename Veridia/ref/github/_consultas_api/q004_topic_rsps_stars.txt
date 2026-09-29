@@ -1,0 +1,20 @@
+# query: https://api.github.com/search/repositories?q=topic:rsps&sort=stars&order=desc&per_page=60 (coletado 2026-09-29; total_count=67; truncado em 19)
+2004Scape/Server|386|198|2025-10-14T03:43:03Z|true|MIT|45127|TypeScript|false|Moving to https://github.com/LostCityRS/Server
+2006-Scape/2006Scape|242|180|2025-06-24T21:08:10Z|false|GPL-3.0|126733|Java|false|A 2006 Runescape Emulation Server
+Naton1/osrs-pvp-reinforcement-learning|180|71|2024-02-11T00:53:20Z|false|null|203986|Java|false|Train a neural network to PvP in OSRS using RL
+GregHib/void|180|102|2026-09-28T22:09:23Z|false|BSD-3-Clause|36694|Kotlin|false|Lightweight 2011 RuneScape multiplayer server
+rsmod/rsmod|179|121|2025-10-01T00:10:04Z|false|ISC|12033|Kotlin|false|OldSchool RuneScape game-server emulator made for educational purposes.
+luna-rs/luna|174|53|2026-09-25T20:35:57Z|false|MIT|10613|Java|false|A scalable and efficient Runescape server targeting revision #377
+Tomm0017/rsmod|126|102|2024-03-19T11:55:18Z|true|Apache-2.0|4217|Kotlin|false|New repository: https://github.com/rsmod/rsmod
+2003scape/rsc-server|91|27|2023-05-06T22:58:32Z|false|AGPL-3.0|4253|JavaScript|false|runescape classic private server
+AlterRSPS/Alter|81|74|2025-10-26T20:44:55Z|false|BSD-2-Clause|16067|Kotlin|false|null
+2003scape/rsc-client|60|25|2023-07-18T23:21:46Z|false|AGPL-3.0|5290|JavaScript|false|runescape classic web client
+2009scape/Singleplayer-Edition-Windows|49|38|2023-07-03T02:48:30Z|true|null|329024|C++|false|2009scape singleplayer build for Windows.
+Parabot/Parabot|45|36|2021-11-27T12:12:33Z|false|GPL-3.0|18869|Java|false|Open Source RSPS Bot
+2009scape/2009scape.github.io|37|54|2026-07-26T13:23:32Z|false|null|788768|HTML|false|remake of the 2009 era Runescape Website
+2009scape/Singleplayer-Edition-Linux|27|11|2022-06-02T02:04:27Z|true|null|394390|C++|false|Singleplayer release of 2009scape for Linux.
+dozmus/runesource|24|9|2019-02-09T15:23:23Z|false|GPL-3.0|4416|Java|false|A RuneSource derivative: RS2 #317 server.
+JayArrowz/NetScape|21|5|2022-12-08T11:50:12Z|false|GPL-3.0|1738|C#|false|C# RSPS Multi Protocol
+2003scape/mudclient204|19|5|2019-10-24T20:42:44Z|false|null|2304|Java|false|runescape classic client (revision 204)
+2003scape/rsc-data-server|16|13|2022-03-28T21:57:20Z|false|AGPL-3.0|1338|JavaScript|false|rsc login server
+2003scape/rsc-sounds|14|3|2020-11-07T14:00:41Z|false|AGPL-3.0|4652|JavaScript|false|rsc sounds

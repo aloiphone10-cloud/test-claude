@@ -1,0 +1,25 @@
+Repositório: https://github.com/mich3lam/runelite-gps-plugin
+Branch: main
+Commit (git rev-parse HEAD): 4f2930818b3dfe8408dbc8feaf5e8bcfbf60c847
+Data do commit: 2026-09-12T15:46:31-07:00
+Mensagem do commit: B2 docs: one table for the remaining benchmarks
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/mich3lam__runelite-gps-plugin
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 9.1M
+Licença (lida do arquivo): BSD-2-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=0 forks=0 pushed_at=2026-09-24T11:09:59Z arquivado=false
+Pastas relevantes:
+  - src/main/java/ (fork do shortest-path com rotas alternativas)
+  - src/test/java/gps/ (~206 arquivos de teste; Client falso com java.lang.reflect.Proxy)
+  - src/jmh/java/ (benchmarks)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: BSD-2.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/mich3lam/runelite-gps-plugin
+  git fetch --depth 1 origin 4f2930818b3dfe8408dbc8feaf5e8bcfbf60c847
+  git checkout FETCH_HEAD

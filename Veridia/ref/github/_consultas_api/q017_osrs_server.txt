@@ -1,0 +1,4 @@
+# query: https://api.github.com/search/repositories?q=osrs server OR "oldschool server" OR "osrs emulator"&sort=stars&per_page=20 (2026-09-29; total_count=6163; OR amplo)
+dennisdev/rs-map-viewer|150|32|2026-08-03T12:48:04Z|false|BSD-2-Clause|4747|TypeScript|false|webapp for exploring current and historical versions of RuneScape
+RuneStar/fonts|126|7|2021-04-24T20:30:22Z|false|CC0-1.0|1301|Python|false|Download OSRS fonts
+blurite/rsprox|121|67|2026-09-28T18:38:41Z|false|MIT|6771|Kotlin|false|RuneScape local proxy server that intercepts and records all the traffic.

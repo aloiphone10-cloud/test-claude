@@ -1,0 +1,27 @@
+Repositório: https://github.com/Jrod7938/JRPlugins
+Branch: master
+Commit (git rev-parse HEAD): a16248462ec7329c6031cc9835c6a8490426fa6e
+Data do commit: 2025-08-06T20:45:48-07:00
+Mensagem do commit: build update
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/Jrod7938__JRPlugins
+Tipo de clone: Clone raso completo (repositório arquivado).
+Tamanho no disco (com .git): 12M
+Licença (lida do arquivo): AGPL-3.0 — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=21 forks=18 pushed_at=2025-08-07T03:45:53Z arquivado=true
+Pastas relevantes:
+  - EthansApi/src/main/java/com/example/EthanApiPlugin/Collections/ (Bank, Inventory, NPCs, TileObjects, Shop, query/)
+  - EthansApi/src/main/java/com/example/InteractionApi/ (via pacotes — fora de escopo)
+  - AutoTrapper/src/main/java/com/polyplugins/Trapper/
+  - StrategyExample/ (StrategySmith: Bar.java, SmithingItem.java, tasks/)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - ScurriusSpines/ScurriusSpines-1.0.0.jar
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=ScurriusSpines/ScurriusSpines-1.0.0.jar;gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: AGPL-3.0. PacketUtils/ e Packets/ forjam pacotes por reflexão (fora de escopo). ScurriusSpines-1.0.0.jar é build commitado (fonte ao lado).
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/Jrod7938/JRPlugins
+  git fetch --depth 1 origin a16248462ec7329c6031cc9835c6a8490426fa6e
+  git checkout FETCH_HEAD

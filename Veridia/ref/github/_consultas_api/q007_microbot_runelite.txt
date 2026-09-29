@@ -1,0 +1,9 @@
+# query: https://api.github.com/search/repositories?q=microbot+runelite&sort=updated&order=desc&per_page=20 (2026-09-29; total_count=8)
+chsami/Microbot|205|570|2026-09-29T03:09:14Z|false|BSD-2-Clause|172303|Java|false|Modified Version of the Open source Runelite client
+JogOnJohn/microbot-shortest-path-sync|0|0|2026-09-26T06:33:09Z|false|BSD-2-Clause|40|Python|false|Deterministic upstream shortest-path transport data sync for Microbot
+beantownbytes/Microbot|0|0|2026-08-07T15:02:39Z|false|BSD-2-Clause|165904|null|false|Modified Version of the Open source Runelite client
+spider355/tutorial-island-bot|0|0|2026-02-07T08:47:44Z|false|NOASSERTION|151|Java|false|Automated Tutorial Island completion plugin for RuneLite/Microbot
+Sunny-P/Microbot-Cardew|0|0|2026-01-07T01:44:42Z|false|BSD-2-Clause|224546|Java|false|Modified Version of the Open source Runelite client
+SteffenCarlsen/Jagex-Account-Switcher|18|6|2025-09-06T02:07:40Z|false|MIT|854|C#|false|account switcher
+themainbosstatus/Microbot|0|0|2025-07-04T22:44:27Z|false|BSD-2-Clause|126109|null|false|Modified Version of the Open source Runelite client
+Warniesmokin/Microbot|0|0|2025-05-15T01:16:03Z|false|BSD-2-Clause|127384|null|false|Modified Version of the Open source Runelite client

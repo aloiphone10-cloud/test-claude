@@ -1,0 +1,25 @@
+Repositório: https://github.com/itsdax/Runescape-Web-Walker-Engine
+Branch: master
+Commit (git rev-parse HEAD): 58bd4facbb20725dffd5a88164eee72e4a7a51e1
+Data do commit: 2026-03-11T10:04:09-05:00
+Mensagem do commit: Add clicking option for karamja boat
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/itsdax__Runescape-Web-Walker-Engine
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 1.8M
+Licença (lida do arquivo): Apache-2.0 — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=104 forks=46 pushed_at=2026-03-11T15:04:09Z arquivado=false
+Pastas relevantes:
+  - src/main/java/dax/walker_engine/interaction_handling/PathObjectHandler.java (obstáculos: portas trancadas, teias, raízes, túneis)
+  - src/main/java/dax/walker/handlers/
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - allatori-annotations-7.5.jar
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;allatori-annotations-7.5.jar;|class=0|allatori_zkm=23|linhas>3000=0
+Observações: Apache-2.0. API TRiBot; 23 arquivos com anotações Allatori (fonte legível). Contém allatori-annotations-7.5.jar.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/itsdax/Runescape-Web-Walker-Engine
+  git fetch --depth 1 origin 58bd4facbb20725dffd5a88164eee72e4a7a51e1
+  git checkout FETCH_HEAD

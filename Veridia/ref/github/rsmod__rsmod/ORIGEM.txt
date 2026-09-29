@@ -1,0 +1,26 @@
+Repositório: https://github.com/rsmod/rsmod
+Branch: main
+Commit (git rev-parse HEAD): fa13b3f67172ef36e15d6b1514358aee61411796
+Data do commit: 2025-09-30T20:08:30-04:00
+Mensagem do commit: Add player following
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/rsmod__rsmod
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 34M
+Licença (lida do arquivo): ISC — arquivo: LICENSE.md
+Metadados da API (coleta 2026-09-29): estrelas=179 forks=121 pushed_at=2025-10-01T00:10:04Z arquivado=false
+Pastas relevantes:
+  - api/shops/src/main/kotlin/org/rsmod/api/shops/ (operações de compra/venda, custos, restock)
+  - api/shops/src/integration/, api/shops/src/test/ (testes)
+  - api/testing/src/main/kotlin/org/rsmod/api/testing/GameTestState.kt
+  - content/skills/fishing, content/skills/woodcutting
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: ISC. Último commit: 30/09/2025.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/rsmod/rsmod
+  git fetch --depth 1 origin fa13b3f67172ef36e15d6b1514358aee61411796
+  git checkout FETCH_HEAD

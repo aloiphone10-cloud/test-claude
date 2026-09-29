@@ -1,0 +1,28 @@
+Repositório: https://github.com/Skretzo/shortest-path
+Branch: master
+Commit (git rev-parse HEAD): 10392514a29dd62b1f325ae15b67e940048549e6
+Data do commit: 2026-09-28T15:33:24-04:00
+Mensagem do commit: Version bump to 1.20.7
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/Skretzo__shortest-path
+Tipo de clone: Clone raso completo (+ fetch --depth=60 para histórico do collision-map).
+Tamanho no disco (com .git): 8.9M
+Licença (lida do arquivo): BSD-2-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=34 forks=86 pushed_at=2026-09-28T19:33:38Z arquivado=false
+Pastas relevantes:
+  - src/main/java/shortestpath/pathfinder/ (Pathfinder, CollisionMap, SplitFlagMap, NodeGraph)
+  - src/main/java/shortestpath/transport/ (Transport, TransportLoader, parser/)
+  - src/main/resources/transports/*.tsv (9.322 linhas)
+  - src/main/resources/collision-map.zip (2.726 regiões)
+  - docs/Transport-TSV-format.md
+  - src/test/java/shortestpath/ (39 arquivos de teste)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: collision-map.zip do HEAD é de 24/09/2026 (provável rev 241); o de 17/09/2026 (c132035) é o último antes da rev 241.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/Skretzo/shortest-path
+  git fetch --depth 1 origin 10392514a29dd62b1f325ae15b67e940048549e6
+  git checkout FETCH_HEAD

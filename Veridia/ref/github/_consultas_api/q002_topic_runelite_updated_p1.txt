@@ -1,0 +1,19 @@
+# query: https://api.github.com/search/repositories?q=topic:runelite&sort=updated&order=desc&per_page=100 (coletado 2026-09-29; saída truncada pelo WebFetch em 18 itens; total_count=179)
+OxainZ/geflip|0|0|2026-09-29T06:46:44Z|false|null|1975|Java|OSRS Grand Exchange flip finder - ranks every item by expected gp/hour
+runelite/plugin-hub|392|2804|2026-09-29T05:02:05Z|false|BSD-2-Clause|18485|null|External plugins for RuneLite
+AKAddons/runelite-loadout-lab|1|0|2026-09-29T04:20:48Z|false|BSD-2-Clause|20400|Java|RuneLite plugin: best-in-slot from the gear you actually own
+cook0001/Linux-Jagex-Launcher|0|0|2026-09-29T02:38:47Z|false|NOASSERTION|8128|TypeScript|Native Linux Jagex Launcher for OSRS, RS3, and Dragonwilds
+ldavid432/chat-cleanup|0|0|2026-09-29T01:27:27Z|false|BSD-2-Clause|247|Java|Plugin for RuneLite that cleans up chat channel messages
+elertan/bronzeman-unleashed|8|4|2026-09-28T21:36:14Z|false|BSD-2-Clause|3308|Java|Ironman without the chores. Unlock items, then trade freely.
+pajlads/DinkPlugin|66|42|2026-09-28T14:16:23Z|false|BSD-2-Clause|2907|Java|Sends level up, clue, etc. notifications to a Discord webhook
+josiahcrackle9631/memory-bank|1|0|2026-09-28T07:36:24Z|false|Apache-2.0|530|Python|Extend LLM context windows
+fevra-dev/Quoth|0|0|2026-09-28T02:50:53Z|false|BSD-2-Clause|3216|Java|RuneLite plugin: NPC dialogue types out word by word
+bepzi/runelite-plugins|0|3|2026-09-28T01:23:39Z|false|BSD-2-Clause|142|Java|Runelite plugins for the Plugin Hub
+fevra-dev/Wayfarer|0|0|2026-09-27T15:19:59Z|false|BSD-2-Clause|352|Java|RuneLite plugin: a Skyrim-style compass strip
+ShepFX/MeteorReporter|0|0|2026-09-26T17:53:20Z|false|BSD-2-Clause|162|Java|RuneLite plugin for sharing crashed Shooting Star reports
+JogOnJohn/microbot-shortest-path-sync|0|0|2026-09-26T06:33:09Z|false|BSD-2-Clause|40|Python|Deterministic upstream shortest-path transport data sync for Microbot
+Kalsupes/RaidParty|0|2|2026-09-25T16:32:49Z|false|BSD-2-Clause|8107|Java|An Improved RuneLite Party Panel
+ldavid432/gauntlet-loot-popup|0|0|2026-09-25T01:27:40Z|false|BSD-2-Clause|1423|Java|Plugin for RuneLite that displays a popup UI after opening the Gauntlet
+internetter/chat-fade|3|5|2026-09-24T18:40:59Z|false|BSD-2-Clause|274|Java|Runelite plugin for users who hide chatbox
+grant9008/personal-space|1|0|2026-09-24T14:03:49Z|false|BSD-2-Clause|5694|Java|RuneLite plugin that makes Old School feel alive
+SilverBoi78/jagex-launcher-linux|0|1|2026-09-24T05:10:11Z|false|AGPL-3.0|103|Rust|Native Linux launcher for RuneScape 3, Old School RuneScape and RuneLite

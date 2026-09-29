@@ -1,0 +1,29 @@
+# query: https://api.github.com/search/repositories?q=[fork:true+]repo:A+repo:B+... (lotes; 2026-09-29)
+rsbox/runelite-rsps|0|0|2023-10-14T04:52:55Z|false|BSD-2-Clause|64522|Java|false|
+OpenRune/OpenRune-Server|30|48|2026-09-28T13:35:01Z|false|ISC|28681|Kotlin|false|
+OpenRune/OpenRune-FileStore|9|12|2026-09-26T10:15:23Z|false||59200|Kotlin|false|
+LostCityRS/Server|273|111|2026-07-08T08:11:55Z|false|MIT|32|JavaScript|false|Setup scripts for Engine + Content
+runetopic/osrs-server|22|7|2024-12-06T19:33:25Z|false|MIT|1607|Kotlin|false|OSRS emulator written in kotlin.
+eternal-framework/eternal|8|3|2019-10-26T09:08:15Z|false|None|123|Kotlin|false|An Open-Source Modular RSPS Framework
+Oveduumnakal/Stockpile-Plugin|0|1|2026-09-27T11:33:09Z|false|BSD-2-Clause|35750|Java|false|Track quantity and value of gathered or processed
+samnooby/SessionTracker|0|0|2026-09-21T12:15:11Z|false|BSD-2-Clause|2399|Java|false|None
+shadowtea/xlitekt|0|2|2022-03-26T19:39:35Z|false|MIT|1393|None|false|Open source Kotlin OSRS Emulator.
+Owain94/runelite-extended|6|13|2020-05-13T16:01:24Z|false|BSD-2-Clause|64976|Java|true|RuneLitePlus
+CalvoG/Runelite-RSPS|3|5|2022-05-26T13:57:09Z|false|BSD-2-Clause|93398|null|true|An open Source Runelite injector for runescape private servers
+NateChambers/RuneLitePlus-PrivateServerEdition|2|2|2019-06-25T20:24:04Z|false|BSD-2-Clause|38428|Java|true|RuneLitePlus extended for RSPS
+Qwiddle/RunelitePlugins|1|0|2024-06-28T17:15:12Z|false|AGPL-3.0|6472|Java|true|RuneLite Automation Plugins
+0xNeffarion/osrsreboxed-db|55|21|2025-01-07T21:11:24Z|false|GPL-3.0|944567|Python|true|A complete and up-to-date database of OSRS (fork de osrsbox-db)
+OpenRune/osrs-220|1|1|2024-03-25T18:27:22Z|true|BSD-2-Clause|135099|Java|true|
+dginovker/ParabotClient|1|0|2019-10-03T23:54:46Z|false|GPL-3.0|18823|Java|true|RSPS Bot (fork Parabot)
+bmyte/rsmod|0|5|2021-09-05T18:19:59Z|false|Apache-2.0|4467|Kotlin|true|RS Mod is an OSRS emulation server
+mich3lam/runelite-gps-plugin|0|0|2026-09-24T11:09:59Z|false|BSD-2-Clause|23489||true|Alternative teleport routes; fork de Shortest Path
+# query: https://api.github.com/search/repositories?q=fork:true+repo:jarromie/open-osrs+repo:RSPSi/RSPSi+repo:Parabot/Parabot-317-API-Minified+repo:midek1/microbotrsps+repo:a-mo3/ccscripts-public+repo:Joshua-F/osrs-dumps (2026-09-29)
+RSPSi/RSPSi|62|141|2022-12-12T18:44:53Z|false|MIT|19077|Java|false|(map editor)
+Joshua-F/osrs-dumps|31|9|2026-09-23T21:49:04Z|false||159829||false|Dump of all OSRS caches on archive.openrs2.org
+a-mo3/ccscripts-public|22|15|2026-08-30T03:56:58Z|false||1899|Java|false|RIP DreamBot gone but not forgotten, heres like 20% of the sdn
+Parabot/Parabot-317-API-Minified|7|15|2022-02-19T19:49:16Z|false|GPL-2.0|449|Java|false|A tiny 317 API for Parabot v2
+midek1/microbotrsps|0|0|2025-02-03T12:44:18Z|false||1697|Java|false|
+# query: https://api.github.com/repos/jarromie/open-osrs (2026-09-29) -> redireciona para kilotech/open-osrs
+jarromie/open-osrs|1|2|2024-05-06T00:58:16Z|true|BSD-2-Clause|96884|null|true|OpenOSRS Client (nome atual kilotech/open-osrs; fork de runelite/runelite; arquivado)
+# query: https://api.github.com/search/repositories?q=fork:true+repo:Kraken-Plugins/shortest-path+repo:Kraken-Plugins/kraken-api (2026-09-29)
+Kraken-Plugins/shortest-path|0|0|2026-07-08T21:24:18Z|false|BSD-2-Clause|17237|Java|true|Pathfinding for Old School RuneScape (fork usado pelo kraken-api)

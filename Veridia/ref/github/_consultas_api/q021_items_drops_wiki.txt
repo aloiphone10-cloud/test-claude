@@ -1,0 +1,6 @@
+# query: https://api.github.com/search/repositories?q=osrsreboxed OR "osrs items" OR "osrs drop table" OR "osrs wiki scraper"&sort=stars&per_page=20 (2026-09-29; total_count=48)
+nkibler7/osrs-wiki-scraper|9|0|2026-09-29T02:02:39Z|false|MIT|10882|Python|false|scrapes the OSRS official wiki
+lou55/osrsreboxed-db|1|0|2025-06-18T10:45:07Z|false|GPL-3.0|978459|Python|false|database of OSRS (osrsreboxed)
+tldrwtf/osrs-wiki-scraper|1|0|2026-04-17T22:01:44Z|false||3|Python|false|Scrapes ItemID, NpcID, ObjectID as ID:Name
+blert-io/item-cache|0|0|2026-07-30T16:57:53Z|false|MIT|70|Java|false|OSRS item cache dumper
+ToMeXaS/osrs-wiki-scraper|1|0|2023-08-04T15:54:26Z|false||186|Python|false|

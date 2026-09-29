@@ -1,0 +1,2 @@
+# query: https://api.github.com/repos/Skretzo/shortest-path (coletado 2026-09-29 via WebFetch)
+Skretzo/shortest-path|34|86|2026-09-28T19:33:38Z|false|BSD-2-Clause|20991|Java|Pathfinding for Old School RuneScape

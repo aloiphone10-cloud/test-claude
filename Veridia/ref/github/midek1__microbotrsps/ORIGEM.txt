@@ -1,0 +1,25 @@
+Repositório: https://github.com/midek1/microbotrsps
+Branch: master
+Commit (git rev-parse HEAD): e69db09c46cc19fe1811b82750bb58d52460ef92
+Data do commit: 2025-02-03T07:43:52-05:00
+Mensagem do commit: slayer superiors/wc improvements
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/midek1__microbotrsps
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 7.9M
+Licença (lida do arquivo): sem arquivo de licença — arquivo: (nenhum arquivo de licença na raiz)
+Metadados da API (coleta 2026-09-29): estrelas=0 forks=0 pushed_at=2025-02-03T12:44:18Z arquivado=false
+Pastas relevantes:
+  - src/main/java/net/runelite/client/plugins/microbot/skilling/ (thieving, fishing, chopper, gemcrafting, runecrafting, farming)
+  - src/main/java/net/runelite/client/plugins/microbot/Microbot.java (handlePrestige)
+  - src/main/java/net/runelite/client/plugins/microbot/eventdismiss/
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: SEM LICENÇA: só leitura. Microbot adaptado para um RSPS não identificado (IDs de objeto 65xxx).
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/midek1/microbotrsps
+  git fetch --depth 1 origin e69db09c46cc19fe1811b82750bb58d52460ef92
+  git checkout FETCH_HEAD

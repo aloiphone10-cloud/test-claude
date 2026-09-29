@@ -1,0 +1,26 @@
+Repositório: https://github.com/OSRSB/OsrsBot
+Branch: master
+Commit (git rev-parse HEAD): ed9ee0e5edbcf55556d6f0236535f19df6e52897
+Data do commit: 2025-02-07T07:31:05-06:00
+Mensagem do commit: Merge pull request #328 from GigiaJ/master
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/OSRSB__OsrsBot
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 68M
+Licença (lida do arquivo): GPL-3.0 — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=165 forks=75 pushed_at=2025-02-07T13:31:05Z arquivado=false
+Pastas relevantes:
+  - src/main/java/net/runelite/rsb/methods/ (Bank, Store, NPCs, Objects, Walking, Menu...)
+  - src/main/java/net/runelite/rsb/internal/InputManager.java
+  - src/main/java/net/runelite/rsb/script/randoms/LoginBot.java
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - OSRSBot.jar
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;OSRSBot.jar;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: Sem commits desde 07/02/2025. Contém OSRSBot.jar (binário; não aberto). Usa Lombok.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/OSRSB/OsrsBot
+  git fetch --depth 1 origin ed9ee0e5edbcf55556d6f0236535f19df6e52897
+  git checkout FETCH_HEAD

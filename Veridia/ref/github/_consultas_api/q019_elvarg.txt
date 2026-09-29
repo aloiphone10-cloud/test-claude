@@ -1,0 +1,7 @@
+# query: https://api.github.com/search/repositories?q=elvarg&sort=stars&per_page=20 (2026-09-29; total_count=29)
+RSPSApp/elvarg-rsps|31|129|2026-09-15T06:42:21Z|false|null|253814|Java|false|Legacy #317 server source written in Java
+camelot317/Elvarg|8|28|2017-03-05T00:37:54Z|false|GPL-3.0|58654|Java|false|#317 RSPS Community Server
+Elvarg-Community/Elvarg-Client-Public|3|16|2024-01-05T08:32:32Z|false|GPL-3.0|170377|Java|false|Elvarg 317 with Latest Data
+Elvarg-Community/Elvarg-Server-Public|3|16|2022-12-05T03:31:08Z|false|null|7841|Java|false|
+dodian-community/317-game-server|3|5|2021-03-27T21:15:43Z|true|null|76235|Java|false|317 game server based on Elvarg.
+daniel-dev-lab/elvarg-cache|0|3|2023-03-20T21:51:00Z|false|null|16345|null|false|cache for elvarg-rsps

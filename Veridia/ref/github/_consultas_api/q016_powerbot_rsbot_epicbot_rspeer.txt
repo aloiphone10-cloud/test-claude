@@ -1,0 +1,7 @@
+# query: https://api.github.com/search/repositories?q=powerbot OR rsbot OR epicbot OR rspeer&sort=stars&per_page=20 (2026-09-29; total_count=837; muitos nao-RS)
+Ineedajob/RSBot|40|20|2019-10-17T09:20:56Z|false|GPL-3.0|3314|Java|false|open-source modification of Runescape (RSBot)
+CameronUpson/extended-api|18|11|2020-02-01T14:42:40Z|true|NOASSERTION|62|Java|false|Community developed API functions (RSPeer?)
+biyori/RSPeer_Scripts|10|2|2019-02-19T20:43:51Z|false|NOASSERTION|107|Java|false|RSPeer scripts
+dmattia/runescape-bot|8|0|2019-03-20T15:45:54Z|false|NOASSERTION|91|Java|false|Rsbot
+itsdax/RSPeer-Webwalker|7|4|2019-10-26T10:51:07Z|false|NOASSERTION|139|Java|false|RSPeer webwalker
+DanielDomaracki/SoilScreenerRSBot|4|0|2021-10-24T18:50:19Z|false|NOASSERTION|32|Java|false|RS3 bot

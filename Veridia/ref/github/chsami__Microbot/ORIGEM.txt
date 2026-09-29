@@ -1,0 +1,28 @@
+Repositório: https://github.com/chsami/Microbot
+Branch: main
+Commit (git rev-parse HEAD): 3032e97db67c29d6762be132be38ea88fb7310b6
+Data do commit: 2026-09-28T22:19:09+02:00
+Mensagem do commit: Merge pull request #1878 from chsami/codex/update-runelite-1.13.0-microbot-2.6.25
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/chsami__Microbot
+Tipo de clone: Clone parcial (sparse): só o pacote microbot + testes + build. Padrões sparse: /LICENSE /README.md /*.gradle* /runelite-client/build.gradle.kts /runelite-client/build.gradle /runelite-client/src/main/java/net/runelite/client/plugins/microbot/ /runelite-client/src/test/java/net/runelite/client/plugins/microbot/ /runelite-client/src/main/resources/net/runelite/client/plugins/microbot/
+Tamanho no disco (com .git): 36M
+Licença (lida do arquivo): BSD-2-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=205 forks=570 pushed_at=2026-09-29T03:09:14Z arquivado=false
+Pastas relevantes:
+  - runelite-client/src/main/java/net/runelite/client/plugins/microbot/util/ (bank, shop, dialogues, inventory, npc, gameobject, walker, player, prayer, security, events)
+  - runelite-client/src/main/java/net/runelite/client/plugins/microbot/util/walker/ (Rs2Walker, door/, obstacle/, recovery/, transport/)
+  - runelite-client/src/main/java/net/runelite/client/plugins/microbot/shortestpath/ (fork do Skretzo/shortest-path)
+  - runelite-client/src/main/java/net/runelite/client/plugins/microbot/api/ (API "Queryable": Rs2NpcQueryable, Rs2TileObjectQueryable...)
+  - runelite-client/src/main/java/net/runelite/client/plugins/microbot/statemachine/ (StateMachineScript, Transition)
+  - runelite-client/src/test/java/net/runelite/client/plugins/microbot/ (132 arquivos de teste)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - nenhum
+Varredura de ofuscação: bins=|class=0|allatori_zkm=0|linhas>3000=1
+Observações: HEAD é RuneLite 1.13.0 / revisão 241 (merge 3032e97 de 28/09/2026). Para rev 240 use o 1º pai: ver relatório.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/chsami/Microbot
+  git sparse-checkout set --no-cone '/LICENSE' '/README.md' '/*.gradle*' '/runelite-client/build.gradle.kts' '/runelite-client/build.gradle' '/runelite-client/src/main/java/net/runelite/client/plugins/microbot/' '/runelite-client/src/test/java/net/runelite/client/plugins/microbot/' '/runelite-client/src/main/resources/net/runelite/client/plugins/microbot/'
+  git fetch --depth 1 --filter=blob:none origin 3032e97db67c29d6762be132be38ea88fb7310b6
+  git checkout FETCH_HEAD

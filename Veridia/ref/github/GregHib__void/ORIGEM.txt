@@ -1,0 +1,27 @@
+Repositório: https://github.com/GregHib/void
+Branch: main
+Commit (git rev-parse HEAD): f88c2c372681992f3442d116a3f2d5fa4e9bcf61
+Data do commit: 2026-09-28T16:22:09+01:00
+Mensagem do commit: Update webclient with sd water flickering, hidden roof tiles and out of map scenery shadow fixes (#1349)
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/GregHib__void
+Tipo de clone: Clone parcial (sparse). Padrões sparse: /LICENSE /README.md /game/src/main/kotlin/content/activity/event/random/ /game/src/test/kotlin/content/activity/event/random/ /game/src/main/kotlin/content/skill/thieving/ /game/src/test/kotlin/content/skill/thieving/ /data/activity/event/random/ /data/skill/thieving/ /data/bot/ /game/src/main/kotlin/content/bot/ /game/src/test/kotlin/FakeRandom.kt /docs/
+Tamanho no disco (com .git): 4.0M
+Licença (lida do arquivo): BSD-3-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=180 forks=102 pushed_at=2026-09-28T22:09:23Z arquivado=false
+Pastas relevantes:
+  - game/src/main/kotlin/content/activity/event/random/ (RandomEvents, RandomEventTrigger, InPlaceRandomEvent, eventos)
+  - game/src/main/kotlin/content/skill/thieving/ (Stalls.kt, Pickpocketing.kt)
+  - game/src/main/kotlin/content/bot/ (bots do servidor: behaviour/)
+  - data/activity/event/random/, data/skill/thieving/, data/bot/
+  - game/src/test/kotlin/ (testes de eventos e thieving)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - nenhum
+Varredura de ofuscação: bins=|class=0|allatori_zkm=0|linhas>3000=0
+Observações: BSD-3. Servidor RS 2011 (não OSRS): mecânicas de referência.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/GregHib/void
+  git sparse-checkout set --no-cone '/LICENSE' '/README.md' '/game/src/main/kotlin/content/activity/event/random/' '/game/src/test/kotlin/content/activity/event/random/' '/game/src/main/kotlin/content/skill/thieving/' '/game/src/test/kotlin/content/skill/thieving/' '/data/activity/event/random/' '/data/skill/thieving/' '/data/bot/' '/game/src/main/kotlin/content/bot/' '/game/src/test/kotlin/FakeRandom.kt' '/docs/'
+  git fetch --depth 1 --filter=blob:none origin f88c2c372681992f3442d116a3f2d5fa4e9bcf61
+  git checkout FETCH_HEAD

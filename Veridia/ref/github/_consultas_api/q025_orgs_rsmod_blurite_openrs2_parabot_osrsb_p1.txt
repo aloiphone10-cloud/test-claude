@@ -1,0 +1,21 @@
+# query: https://api.github.com/search/repositories?q=user:rsmod user:blurite user:openrs2 user:Parabot user:OSRSB&sort=updated&per_page=20 (2026-09-29; total_count=48; pagina 1)
+blurite/rsprox|121|67|2026-09-28T18:38:41Z|false|MIT|6771|Kotlin|false|RuneScape local proxy server
+blurite/rsprot|75|28|2026-09-14T22:25:39Z|false|MIT|5951|Kotlin|false|RSProt networking package for RSPS
+openrs2/openrs2|55|19|2026-09-05T11:16:57Z|false|ISC|4645|Kotlin|false|Open-source multiplayer game server compatible with the RS
+blurite/rscm-plugin|10|6|2026-07-22T04:38:42Z|false||241|Kotlin|false|Map your strings
+blurite/117-rlhd|1|1|2026-07-15T16:26:43Z|false|BSD-2-Clause|81206|Java|false|
+blurite/rsprox-runelite-launcher|1|1|2026-07-09T13:16:22Z|false|BSD-2-Clause|14516|Java|false|Launcher for RuneLite
+openrs2/openrs2-nonfree|5|0|2026-06-06T09:48:46Z|false||81559|Java|false|Code and data that cannot be distributed under OpenRS2's license
+rsmod/rsmod|179|121|2025-10-01T00:10:04Z|false|ISC|12033|Kotlin|false|OSRS game-server emulator
+OSRSB/bindings|0|0|2025-03-01T02:04:06Z|false||0||false|(vazio)
+OSRSB/OsrsBot|165|75|2025-02-07T13:31:05Z|false|GPL-3.0|45061|Java|false|RuneLite bot automation extension API
+OSRSB/script-template|23|24|2024-08-14T01:29:56Z|false|BSD-3-Clause|151|Java|false|Template for OsrsBot scripts
+OSRSB/DeviousWalkerOSRSBot|0|2|2023-11-15T04:40:24Z|false||815|Java|false|
+openrs2/openrs2-natives|0|1|2023-09-24T17:34:32Z|false|ISC|273|C|false|natives
+openrs2/openrs2-parent|0|0|2023-09-02T15:43:09Z|false|ISC|40||false|Parent POM
+OSRSB/OSRSBPlugin|4|7|2023-07-24T22:14:02Z|false||458|Java|false|The plugin stuff for OSRSBot
+OSRSB/DaxWalkerOSRSBot|5|11|2023-07-24T22:13:16Z|false||360|Java|false|DaxWalkerPort for OsrsBot
+Parabot/BDN-V4|1|1|2022-09-30T20:45:45Z|false||2362|PHP|false|BDN v4
+blurite/rscm-maven|0|0|2022-08-23T21:26:01Z|false||0||false|(vazio)
+openrs2/openrs2-docker|0|0|2022-04-03T10:35:50Z|true|ISC|6|Dockerfile|false|
+Parabot/Parabot-317-API-Minified|2|4|2022-02-23T14:51:42Z|false||4451|Java|false|(nota: stats divergem da busca anterior 7|15 - verificar)

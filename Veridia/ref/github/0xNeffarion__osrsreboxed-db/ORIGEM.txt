@@ -1,0 +1,26 @@
+Repositório: https://github.com/0xNeffarion/osrsreboxed-db
+Branch: master
+Commit (git rev-parse HEAD): 37322fed3abb2d58236c59dfc6babb37a27a50ea
+Data do commit: 2025-01-07T21:10:03+00:00
+Mensagem do commit: Fixed ubuntu version in workflow agent
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/0xNeffarion__osrsreboxed-db
+Tipo de clone: Clone parcial (sparse): docs/*.json de topo, scripts, data. Padrões sparse: /LICENSE /README.md /docs/*.json /osrsreboxed/ /scripts/ /data/
+Tamanho no disco (com .git): 246M
+Licença (lida do arquivo): GPL-3.0 — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=55 forks=21 pushed_at=2025-01-07T21:11:24Z arquivado=false
+Pastas relevantes:
+  - docs/items-complete.json (28.744 itens; maior id 30389)
+  - docs/monsters-complete.json
+  - docs/npcs-summary.json, docs/objects-summary.json
+  - scripts/ (atualização a partir do cache e da wiki)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - nenhum
+Varredura de ofuscação: bins=|class=0|allatori_zkm=0|linhas>3000=0
+Observações: GPL-3.0. Dados até 07/01/2025 (antes da rev 240).
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/0xNeffarion/osrsreboxed-db
+  git sparse-checkout set --no-cone '/LICENSE' '/README.md' '/docs/*.json' '/osrsreboxed/' '/scripts/' '/data/'
+  git fetch --depth 1 --filter=blob:none origin 37322fed3abb2d58236c59dfc6babb37a27a50ea
+  git checkout FETCH_HEAD

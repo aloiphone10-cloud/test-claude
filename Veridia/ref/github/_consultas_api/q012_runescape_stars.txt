@@ -1,0 +1,16 @@
+# query: https://api.github.com/search/repositories?q=webwalker OR "web walker" OR "web-walker" runescape&sort=stars&per_page=20 (2026-09-29; a busca virou OR amplo: top por estrelas de "runescape")
+runelite/runelite|5467|5823|2026-09-28T14:16:34Z|false|BSD-2-Clause|122108|Java|false|Open source Old School RuneScape client
+MaxBittker/rs-sdk|818|115|2026-09-28T22:44:08Z|false|MIT|86238|TypeScript|false|Runescape automation library, optimized for use by
+2004Scape/Server|386|198|2025-10-14T03:43:03Z|true|MIT|45127|TypeScript|false|Moving to LostCityRS/Server
+wise-old-man/wise-old-man|355|121|2026-09-27T16:39:55Z|false|MIT|38569|TypeScript|false|OSRS progress tracker
+open-osrs/runelite|325|430|2023-03-04T00:29:18Z|true|BSD-2-Clause|93161|Java|false|Actually open source Old School RuneScape client
+runejs/server|300|100|2026-09-03T12:30:02Z|false|GPL-3.0|68676|TypeScript|false|RuneJS game server
+slyautomation/osrs_basic_botting_functions|246|75|2023-12-15T10:34:47Z|false|NOASSERTION|20162|Python|false|Functions for automating osrs botting using Python.
+osrsbox/osrsbox-db|245|96|2022-08-07T00:55:48Z|false|GPL-3.0|630086|Python|false|A complete and up-to-date database of OSRS
+2006-Scape/2006Scape|242|180|2025-06-24T21:08:10Z|false|GPL-3.0|126733|Java|false|2006 Runescape Emulation Server
+GregHib/void|180|102|2026-09-28T22:09:23Z|false|BSD-3-Clause|36694|Kotlin|false|2011 RuneScape server
+Naton1/osrs-pvp-reinforcement-learning|180|71|2024-02-11T00:53:20Z|false|NOASSERTION|203986|Java|false|PvP RL
+rsmod/rsmod|179|121|2025-10-01T00:10:04Z|false|ISC|12033|Kotlin|false|OSRS game-server emulator
+luna-rs/luna|174|53|2026-09-25T20:35:57Z|false|MIT|10613|Java|false|RS server #377
+OSRSB/OsrsBot|165|75|2025-02-07T13:31:05Z|false|GPL-3.0|45061|Java|false|RuneLite bot automation extension API
+oldschoolgg/oldschoolbot|156|71|2026-09-28T18:04:30Z|false|AGPL-3.0|66876|TypeScript|false|Discord bot (nao e automacao do jogo)

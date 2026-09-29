@@ -1,0 +1,21 @@
+# query: https://api.github.com/search/repositories?q=Microbot+in:name+fork:only&sort=updated&order=desc&per_page=20 (2026-09-29; total_count=910)
+# formato: full_name|stars|forks|pushed_at|created_at|archived|size|lang|desc
+dylanreniers/Microbot-Hub|0|0|2026-09-29T06:36:28Z|2025-12-27T17:25:06Z|false|92870|Java|fork Microbot-Hub
+afss0/Microbot|0|0|2026-09-29T04:14:20Z|2026-02-10T04:17:04Z|false|172480|Java|fork Microbot
+renancavalcantercb/Microbot|0|0|2026-09-29T00:02:07Z|2026-09-08T13:18:31Z|false|174869|Java|fork Microbot
+droplugins/Microbot-Hub|0|0|2026-09-28T23:50:22Z|2026-09-07T03:33:57Z|false|94229|Java|fork Microbot-Hub
+JogOnJohn/Microbot-Hub|0|0|2026-09-28T22:27:19Z|2026-06-04T02:47:02Z|false|95039|Java|fork Microbot-Hub
+JogOnJohn/Microbot|0|0|2026-09-28T22:14:47Z|2025-07-27T05:54:46Z|false|177854|Java|fork Microbot
+droplugins/Microbot|0|0|2026-09-28T22:12:13Z|2026-09-15T20:38:49Z|false|173365|Java|fork Microbot
+T-edit/Microbot-Hub|0|0|2026-09-28T20:21:16Z|2025-11-05T22:28:35Z|false|94220|Java|fork Microbot-Hub
+T-edit/Microbot|1|1|2026-09-28T20:25:43Z|2025-08-13T01:53:30Z|false|173745|Java|fork Microbot
+crispycritter99/Microbot|0|0|2026-09-28T17:15:43Z|2025-01-20T07:58:07Z|false|176987|Java|fork Microbot
+KSPOG/Microbot-Hub|0|0|2026-09-27T21:57:01Z|2026-01-10T18:43:36Z|false|94838|Java|fork Microbot-Hub
+infuse21/Microbot|1|0|2026-09-29T03:26:42Z|2026-06-28T14:24:44Z|false|177223|Java|fork Microbot
+JariTormalehto/Microbot|0|0|2026-09-26T19:21:14Z|2026-06-17T23:25:16Z|false|170952|Java|fork Microbot
+afss0/Microbot-Hub|0|0|2026-09-28T21:10:11Z|2026-01-28T02:19:50Z|false|94111|Java|fork Microbot-Hub
+itscapone/Microbot|0|0|2026-09-26T10:08:22Z|2026-09-28T01:36:47Z|false|171524|null|fork Microbot
+addjose/Microbot|0|0|2026-09-25T01:38:25Z|2025-03-11T04:09:07Z|false|170952|Java|fork Microbot
+ZuiqOri/Microbot|0|0|2026-09-24T15:26:39Z|2025-02-15T11:08:25Z|false|170952|Java|fork Microbot
+infuse21/Microbot-Hub|0|0|2026-09-23T00:01:40Z|2025-08-20T12:15:03Z|false|92272|Java|fork Microbot-Hub
+khahn8/Microbot|0|0|2026-09-22T23:45:16Z|2026-08-12T15:23:10Z|false|170952|Java|fork Microbot

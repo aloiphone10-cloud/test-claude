@@ -1,0 +1,10 @@
+# query: https://api.github.com/search/repositories?q=near-reality OR nearreality OR "near reality"&sort=updated&per_page=20 (2026-09-29; total_count=61, maioria ruido)
+near-reality-com/provably-fair|0|0|2026-08-30T02:12:40Z|false|MIT|36|JavaScript|false|Public Near Reality dice and mines provably-fair verifiers
+kurdowns/RSPS-NEAR-REALITY|2|3|2026-01-18T02:29:25Z|false|null|235414|Java|false|NEAR REALITY (sem licenca; provavel copia de fonte privada)
+kurdowns/Near-Reality|0|0|2026-01-18T01:44:11Z|false|null|0|null|false|vazio
+kurdowns/Near-Reality-Project|0|0|2026-01-18T01:42:40Z|false|null|0|null|false|vazio
+Ecoscape16/near-reality-server-new|0|1|2025-05-13T22:45:18Z|false|null|225294|Java|false|(sem licenca; provavel copia de fonte privada)
+# query: https://api.github.com/search/repositories?q=user:near-reality-com&sort=updated&per_page=50 (2026-09-29; total_count=3)
+near-reality-com/runelite-hosting|0|0|2026-09-18T17:07:40Z|false|None|108502|None|false|
+near-reality-com/provably-fair|0|0|2026-08-30T02:12:40Z|false|MIT|36|JavaScript|false|Public Near Reality dice and mines provably-fair verifiers
+near-reality-com/launcher-releases|0|0|2026-03-07T00:03:57Z|false|None|197|HTML|false|

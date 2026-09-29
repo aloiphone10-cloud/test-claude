@@ -1,0 +1,14 @@
+# query: https://api.github.com/search/repositories?q=topic:osrs-bot&sort=stars&order=desc&per_page=50  (coletado 2026-09-29 via WebFetch)
+12
+pashpashpash/RunescapeBots|55|11|2022-11-24T03:20:54Z|false|NOASSERTION|5065|Java|A couple of OSRS bot projects, hoping to continue
+kaiergin/runescape-ML|39|14|2023-04-23T23:30:55Z|false|GPL-3.0|40|Python|Train computer vision models to complete clicking
+bottimaakari/osrs-gui-bots|19|3|2022-12-05T20:41:46Z|false|NOASSERTION|7741|Python|A GUI Bot collection for OSRS (OldSchool RuneScape
+tarranprior/runebot|12|1|2026-07-27T10:05:42Z|false|NOASSERTION|7468|Python|The modern RuneScape companion for your Discord serv
+tarkojs/osrs-yolov5|6|2|2023-02-17T11:31:40Z|false|NOASSERTION|51359|Python|Use the YOLOv5 object detection model to detect entit
+JHoweWowe/RuneLiteBot|2|1|2021-08-05T16:59:28Z|false|NOASSERTION|120|Python|Old School Runescape Bot - currently implementing Ope
+beezyscriptsdreambot/pkheaven|1|0|2026-04-19T18:39:02Z|false|MIT|49|HTML|Checks Oldschool Runescape players in a certain area
+ivan-guerra/colorbot|1|0|2026-08-04T15:05:39Z|false|Unlicense|305|Rust|A OSRS color bot
+CainDev/DreamBot-Scripts|0|0|2026-09-07T00:23:22Z|false|NOASSERTION|184|Java|A few of my horribly written DreamBot scripts since
+JonneSaloranta/Epicbot-Quester|0|1|2023-02-17T09:05:56Z|false|MIT|18|Java|Open-Source Epicbot Quester for Old School Runescape
+xsat/osrs|0|0|2024-08-06T12:38:14Z|false|MIT|417|Python|OpenCV education and fun project for OSRS game.
+Adept-Team-OS/OSRS.github.io|0|0|2026-03-21T14:00:05Z|false|CC0-1.0|95|Python|OSRS Toolbox

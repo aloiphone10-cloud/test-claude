@@ -1,0 +1,16 @@
+# query: https://api.github.com/search/repositories?q=osrsbox OR osrsreboxed OR "osrs cache" OR "osrs-cache"&sort=stars&per_page=20 (2026-09-29; total_count=60)
+osrsbox/osrsbox-db|245|96|2022-08-07T00:55:48Z|false|GPL-3.0|630086|Python|false|database of OSRS items, monsters and prayers
+kfricilone/OpenRS|51|27|2019-06-21T04:04:16Z|false|GPL-3.0|327|Java|false|Modified OpenRS that supports the OSRS Cache Format
+osrsbox/osrsbox-api|45|13|2021-08-05T03:52:54Z|false|GPL-3.0|3343|HTML|false|RESTful API osrsbox
+Joshua-F/osrs-dumps|31|9|2026-09-23T21:49:04Z|false||159829||false|Dump of all OSRS caches on archive.openrs2.org
+abextm/osrs-cache|25|5|2026-09-23T13:45:56Z|false||2102138||false|
+abextm/cache2|22|10|2026-08-28T15:17:20Z|false|BSD-2-Clause|693|TypeScript|false|OSRS Cache viewer
+zwyz/osrs-cache|16|5|2026-09-27T07:07:09Z|false|MIT|917|Java|false|
+abextm/nipple|13|2|2019-10-09T22:51:36Z|false|NOASSERTION|23|JavaScript|false|Scripts for working with the OSRS Cache
+allenkinzalow/OS-Cache-Suite|10|7|2015-07-08T02:19:01Z|false|GPL-3.0|264|Java|false|OS cache explorer
+osrsbox/osrsbox-python|10|5|2019-11-19T16:53:18Z|false|GPL-3.0|1307|Python|false|osrsbox python parsers
+osrsbox/osrsbox-plugins|3|4|2021-05-13T03:59:47Z|false|BSD-2-Clause|26|Java|false|basic RuneLite plugins
+kfricilone/kached|2|1|2025-05-04T07:28:39Z|false|ISC|107|Kotlin|false|Osrs Cache Downloader in Kotlin
+osrs-wiki/cache-mediawiki|2|0|2026-09-02T20:16:01Z|false|GPL-3.0|731|TypeScript|false|OSRS cache -> MediaWiki
+tpetrychyn/osrs-cache-parser|3|1|2020-09-23T14:17:16Z|false||1419|Go|false|parse the osrs cache in golang
+runetech/osrs-cache-format|3|2|2019-12-11T16:46:28Z|false||112|Kotlin|false|Clone of RuneStar's cache library

@@ -1,0 +1,24 @@
+Repositório: https://github.com/pajlads/DinkPlugin
+Branch: master
+Commit (git rev-parse HEAD): 7c026d35630e65c3c4e1d25f3ef62f2e6b3c71ac
+Data do commit: 2026-09-28T16:15:31+02:00
+Mensagem do commit: Release v1.15.2 (#1026)
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/pajlads__DinkPlugin
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 3.6M
+Licença (lida do arquivo): BSD-2-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=66 forks=42 pushed_at=2026-09-28T14:16:23Z arquivado=false
+Pastas relevantes:
+  - src/test/java/dinkplugin/MockedTestBase.java (Mockito + Guice BoundFieldModule)
+  - src/test/java/dinkplugin/notifiers/ (46 arquivos em src/test, 44 .java)
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: BSD-2.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/pajlads/DinkPlugin
+  git fetch --depth 1 origin 7c026d35630e65c3c4e1d25f3ef62f2e6b3c71ac
+  git checkout FETCH_HEAD

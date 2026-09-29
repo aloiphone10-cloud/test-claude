@@ -1,0 +1,24 @@
+Repositório: https://github.com/chsami/Microbot-Hub
+Branch: main
+Commit (git rev-parse HEAD): 4cb819867439f62d0e3301fc42dbc391d2b46c20
+Data do commit: 2026-09-28T22:26:36+02:00
+Mensagem do commit: Merge pull request #564 from chsami/codex/runelite-1.13-price-compat
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/chsami__Microbot-Hub
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 194M
+Licença (lida do arquivo): BSD-2-Clause — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=22 forks=188 pushed_at=2026-09-28T20:31:57Z arquivado=false
+Pastas relevantes:
+  - src/main/java/net/runelite/client/plugins/microbot/<plugin>/ (164 plugins)
+  - chaosaltar/, tormenteddemons/, GemCrabKiller/, thievingstalls/, thieving/, eventdismiss/, playermonitor/, mining/, autofishing/, woodcutting/, cannonballsmelter/, smelting/, crafting/, microhunter/, DeadFallTrapHunter/, birdhunter/, salamanders/, bluedragons/, aiofighter/, autobuyer/
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: Depende da camada Rs2* do Microbot: só leitura de lógica.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/chsami/Microbot-Hub
+  git fetch --depth 1 origin 4cb819867439f62d0e3301fc42dbc391d2b46c20
+  git checkout FETCH_HEAD

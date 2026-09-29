@@ -1,0 +1,25 @@
+Repositório: https://github.com/Kraken-Plugins/kraken-example-plugin
+Branch: master
+Commit (git rev-parse HEAD): 9bc15a5e9a02f141f7a8ecdcd1731c11182af621
+Data do commit: 2026-09-11T13:48:19-04:00
+Mensagem do commit: refactor: Update example plugins and normal plugins to v5.1.0 of Kraken API
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/Kraken-Plugins__kraken-example-plugin
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 3.1M
+Licença (lida do arquivo): GPL-3.0 — arquivo: LICENSE
+Metadados da API (coleta 2026-09-29): estrelas=2 forks=3 pushed_at=2026-09-28T15:00:45Z arquivado=n/d
+Pastas relevantes:
+  - fishing/src/main/java/com/krakenplugins/example/fishing/script/ (estados por local: Draynor, barbarian, corsair, karamja deposit box)
+  - combat/src/main/java/com/krakenplugins/example/combat/script/task/ (FindTarget, EatFood, Loot, Restock...)
+  - firemaking/
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew.bat
+Varredura de ofuscação: bins=gradle/wrapper/gradle-wrapper.jar;gradlew.bat;|class=0|allatori_zkm=0|linhas>3000=0
+Observações: GPL-3.0. Depende do kraken-api.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/Kraken-Plugins/kraken-example-plugin
+  git fetch --depth 1 origin 9bc15a5e9a02f141f7a8ecdcd1731c11182af621
+  git checkout FETCH_HEAD

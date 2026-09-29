@@ -1,0 +1,17 @@
+# query: https://api.github.com/search/repositories?q="rsps bot" OR parabot OR "rsps botting"&sort=stars&order=desc&per_page=60 (coletado 2026-09-29; total_count=185; truncado em 19)
+Parabot/Parabot|45|36|2021-11-27T12:12:33Z|false|GPL-3.0|18869|Java|false|The best Open Source RSPS Bot
+nekonomicon/Parabot|23|14|2019-11-12T21:33:05Z|true|null|1284|C++|false|Crossplatform fork of parabot 0.91. DEPRECATED.
+Parabot/Parabot-317-API-Minified|7|15|2022-02-19T19:49:16Z|false|GPL-2.0|449|Java|false|A tiny 317 API for Parabot v2
+dginovker/Parabot-Scripts|6|2|2019-07-18T15:45:02Z|false|null|2536|null|false|Cus let's open source everything
+Parabot/Launcher|6|2|2017-05-09T20:38:36Z|false|NOASSERTION|68|Java|false|System to launch, update and configure Parabot
+Parabot/Randoms|5|6|2019-05-04T23:32:01Z|false|null|2318|Java|false|The Parabot randoms
+Parabot/Internal-API|5|6|2020-11-28T11:16:46Z|false|null|178|Java|false|Internal API for Parabot
+Shadowrs/Parabot-gui-hook-mapper|5|2|2018-07-31T22:57:28Z|false|GPL-3.0|208|Java|false|hook mapper for Parabot
+Vik-Git/OculusBot|3|3|2018-05-07T13:58:24Z|false|null|51|Java|false|RSPS Bot
+Parabot/Parabot-317-API|3|2|2014-03-21T13:34:47Z|false|null|809|Java|false|Basic 317 bot API for Parabot V2
+Ethan07Scape/ParabotOSRS|3|1|2019-11-11T05:19:34Z|false|null|135|Java|false|A WIP provider for OSRS using Parabot
+Parabot/Example-Script|3|1|2017-02-17T11:32:24Z|false|null|7|Java|false|script example using the Minified 317 API
+Parabot/BDN-V3|3|0|2019-12-10T06:48:13Z|false|null|825|PHP|false|Bot Delivery Network v3
+BringsEuphoria/src|2|4|2014-11-20T05:55:27Z|false|GPL-3.0|210|Java|false|scripts for parabot
+2006-Scape/Parabot|2|4|2023-02-18T02:47:38Z|false|GPL-3.0|18585|Java|false|null
+Parabot/Maven-Repository|2|2|2016-05-16T22:12:19Z|false|null|9008|null|false|Maven repository for Parabot

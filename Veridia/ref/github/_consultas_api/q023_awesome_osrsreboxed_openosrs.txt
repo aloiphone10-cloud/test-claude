@@ -1,0 +1,22 @@
+# query: https://api.github.com/search/repositories?q=awesome in:name runescape OR ... runelite&sort=stars (2026-09-29; total_count=1)
+ar1a/awesome-runelite|1|0|2017-12-03T05:54:02Z|false|CC0-1.0|10|Shell|false|
+# query: https://api.github.com/search/repositories?q=osrsreboxed-db+in:name (2026-09-29; total_count=1)
+lou55/osrsreboxed-db|1|0|2025-06-18T10:45:07Z|false|GPL-3.0|978459|Python|false|A complete and up-to-date database of OSRS
+# query: https://api.github.com/search/repositories?q=unethicalite OR openosrs OR "devious client" OR "storm client" OR "hoot client"&sort=stars (2026-09-29; total_count=203)
+open-osrs/runelite|325|430|2023-03-04T00:29:18Z|true|BSD-2-Clause|93161|Java|false|Actually open source OSRS client (arquivado)
+Ganom/ExternalPlugins|102|171|2022-06-16T09:57:42Z|true|GPL-3.0|2790|Kotlin|false|External plugins for OpenOSRS
+jbx5/devious-client|83|164|2024-10-10T15:46:36Z|false|BSD-2-Clause|149180|Java|false|
+open-osrs/plugins|43|195|2022-08-06T00:35:01Z|false|GPL-3.0|26613|Java|false|officially supported OpenOSRS plugins
+open-osrs/launcher|33|52|2022-05-09T01:28:43Z|false|BSD-2-Clause|1054|Java|false|OpenOSRS launcher
+open-osrs/openosrs-mobile|23|13|2021-03-06T21:15:08Z|false|BSD-3-Clause|145448|Java|false|RuneLite API for Android
+y-fletch/ocplugins|17|17|2023-10-12T00:08:15Z|false|GPL-3.0|23796|Java|false|OpenOSRS OCPlugins
+Owain94/OpenOSRS-external-plugins|16|71|2022-10-21T18:20:57Z|false|GPL-3.0|1763|Java|false|
+open-osrs/openosrs-injector|14|29|2022-06-30T19:51:50Z|false|GPL-3.0|2124|Java|false|injector (fora de escopo: injecao)
+Sundar-Gandu/Pajeet-Plugins|13|35|2022-09-08T13:41:17Z|true|BSD-2-Clause|1117|Java|false|External Plugins for OpenOSRS
+CRNHV/ucci-plugins-source|10|18|2023-05-12T13:57:34Z|false|GPL-3.0|153|Java|false|plugins for OSRS devious client
+runetopic/openosrs|10|7|2024-01-17T15:19:29Z|false|BSD-2-Clause|111931|Java|false|
+yuri-moens/chaos-plugins|8|9|2022-09-05T18:50:18Z|true|GPL-3.0|6559|Java|false|Plugins for unethicalite
+yuri-moens/unethicalite|6|70|2022-09-04T11:06:29Z|false|BSD-2-Clause|112621|Java|false|
+yuri-moens/chaos-plugins-public|5|12|2022-09-06T19:55:08Z|true|GPL-3.0|2602|Java|false|Public plugins for unethicalite
+aidanngill/openosrs-plugins|5|1|2022-05-03T16:01:44Z|true|GPL-3.0|3039|Java|false|OpenOSRS plugins
+tesikel/deadzone|4|24|2020-05-09T22:47:35Z|false|GPL-3.0|8402|Java|false|"DeadZone OpenOSRS plugins cracked" (FORA: crackeado)

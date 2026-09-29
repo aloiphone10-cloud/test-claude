@@ -1,0 +1,31 @@
+Repositório: https://github.com/a-mo3/ccscripts-public
+Branch: main
+Commit (git rev-parse HEAD): 8d94b3c8c0e2c261926ed077998f388508a9d898
+Data do commit: 2026-08-30T13:56:58+10:00
+Mensagem do commit: Create README.md
+Clonado em: 2026-09-29 (UTC), sessão Claude Code na nuvem; destino no container: /home/user/Veridia/ref/github/a-mo3__ccscripts-public
+Tipo de clone: Clone raso completo.
+Tamanho no disco (com .git): 45M
+Licença (lida do arquivo): sem arquivo de licença — arquivo: (nenhum arquivo de licença na raiz)
+Metadados da API (coleta 2026-09-29): estrelas=22 forks=15 pushed_at=2026-08-30T03:56:58Z arquivado=false
+Pastas relevantes:
+  - cannonballAIO/src
+  - anglerfish/src
+  - minnows/src
+  - magicTrees/src
+  - cCMiner/src
+  - mlm/src
+  - cCThieving/src
+  - ChinchompaAccBuilder/src, cCRedChinchompa/src, cCBlackChinchompas/src
+  - reddragons/src, greendragons/src, brutalblue/src, lavadragons/src
+  - pvmscripts/src
+Binários/scripts encontrados (*.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr) — NÃO executados nem abertos:
+  - nenhum
+Varredura de ofuscação: bins=|class=0|allatori_zkm=0|linhas>3000=3
+Observações: SEM LICENÇA: só leitura. API DreamBot. Autoria dos scripts não verificada.
+
+Para reproduzir exatamente este estado no Windows (PowerShell), dentro desta pasta (que já contém este ORIGEM.txt):
+  git init
+  git remote add origin https://github.com/a-mo3/ccscripts-public
+  git fetch --depth 1 origin 8d94b3c8c0e2c261926ed077998f388508a9d898
+  git checkout FETCH_HEAD

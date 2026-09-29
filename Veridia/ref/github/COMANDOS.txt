@@ -1,0 +1,205 @@
+COMANDOS.txt — todos os comandos da pesquisa, na ordem em que foram executados
+Execução: 2026-09-29 (UTC), sessão Claude Code na NUVEM (container Linux, proxy de saída com política restrita).
+Os caminhos /home/user/... são do container. No seu Windows, o equivalente é C:\Users\Claudio 2.0\Desktop\Veridia\ref\github\ — ver a seção 10 para reproduzir.
+Nenhum gradlew/mvnw/npm/.bat/.ps1/.sh dos repositórios foi executado; nenhum .jar/.exe foi aberto; nenhum asset de Release foi baixado.
+
+=== 1. Diagnóstico de rede (o que o ambiente permite) ===
+cat /root/.ccr/README.md; curl -sS "$HTTPS_PROXY/__agentproxy/status"
+curl -sS -o /dev/null -w "%{http_code}" https://api.github.com/repos/Skretzo/shortest-path   # 403: API bloqueada p/ repositório não anexado
+curl ... https://github.com/Skretzo/shortest-path   # 403
+curl ... https://raw.githubusercontent.com/Skretzo/shortest-path/master/README.md   # 200
+curl ... https://codeload.github.com/...   # 403
+curl ... repos.ecosyste.ms, img.shields.io, grep.app, sourcegraph.com, html.duckduckgo.com, www.google.com, awesome.ecosyste.ms, explv.github.io, mejrs.github.io, static.runelite.net, oldschool.runescape.wiki, search.maven.org, repo.runelite.net, ossinsight.io, api.ossinsight.io, gh-api.clickhouse.tech, play.clickhouse.com, huggingface.co   # todos 403 (política); gitlab.com 200
+ferramenta add_repo(Skretzo/shortest-path, read)   # resposta: leitura git anônima de repositórios públicos liberada pelo proxy
+
+=== 2. Descoberta (API REST pública do GitHub via WebFetch, sem autenticação; ~20 itens legíveis por consulta) ===
+As respostas estão em _consultas_api/<arquivo>. Total: 63 chamadas. A linha "[fork:true+]repo:A+repo:B" agrupa 6 chamadas (3 sem e 3 com fork:true), e a consulta "microbot in:readme" (página 1) foi repetida uma vez para obter o nome completo com o dono.
+WebFetch https://api.github.com/repos/Skretzo/shortest-path (coletado 2026-09-29 via WebFetch)   [_consultas_api/q000_repo_shortest-path.txt]
+WebFetch https://api.github.com/search/repositories?q=topic:osrs-bot&sort=stars&order=desc&per_page=50  (coletado 2026-09-29 via WebFetch)   [_consultas_api/q001_topic_osrs-bot.txt]
+WebFetch https://api.github.com/search/repositories?q=topic:runelite&sort=updated&order=desc&per_page=100 (coletado 2026-09-29; saída truncada pelo WebFetch em 18 itens; total_count=179)   [_consultas_api/q002_topic_runelite_updated_p1.txt]
+WebFetch https://api.github.com/search/repositories?q=microbot+in:name,description&sort=updated&order=desc&per_page=60 (coletado 2026-09-29; total_count=564; WebFetch truncou em ~19 itens)   [_consultas_api/q003_microbot_in_name_desc.txt]
+WebFetch https://api.github.com/search/repositories?q=topic:rsps&sort=stars&order=desc&per_page=60 (coletado 2026-09-29; total_count=67; truncado em 19)   [_consultas_api/q004_topic_rsps_stars.txt]
+WebFetch https://api.github.com/search/repositories?q="rsps bot" OR parabot OR "rsps botting"&sort=stars&order=desc&per_page=60 (coletado 2026-09-29; total_count=185; truncado em 19)   [_consultas_api/q005_rsps_bot_parabot.txt]
+WebFetch https://api.github.com/search/repositories?q="osrs bot" OR "runescape bot" OR "oldschool bot"&sort=stars&order=desc&per_page=60 (coletado 2026-09-29; total_count=312; truncado em 19)   [_consultas_api/q006_osrs_bot_keywords.txt]
+WebFetch https://api.github.com/search/repositories?q=microbot+runelite&sort=updated&order=desc&per_page=20 (2026-09-29; total_count=8)   [_consultas_api/q007_microbot_runelite.txt]
+WebFetch https://api.github.com/search/repositories?q=ethanapi OR piggyplugins OR "ethan vann"&sort=updated&order=desc&per_page=20 (2026-09-29; total_count=12)   [_consultas_api/q008_ethanapi_piggy.txt]
+WebFetch https://api.github.com/search/repositories?q=Microbot+in:name+fork:only&sort=updated&order=desc&per_page=20 (2026-09-29; total_count=910)   [_consultas_api/q009_microbot_forks_only.txt]
+WebFetch https://api.github.com/search/repositories?q=shortest-path+in:name+fork:true+pathfinding&sort=updated&per_page=20 (2026-09-29; total_count=41; so os 3 primeiros sao OSRS)   [_consultas_api/q010_shortest-path_named.txt]
+WebFetch https://api.github.com/search/repositories?q=OsrsBot+in:name+fork:true&sort=updated&per_page=20 (2026-09-29; total_count=148)   [_consultas_api/q011_osrsbot_named.txt]
+WebFetch https://api.github.com/search/repositories?q=webwalker OR "web walker" OR "web-walker" runescape&sort=stars&per_page=20 (2026-09-29; a busca virou OR amplo: top por estrelas de "runescape")   [_consultas_api/q012_runescape_stars.txt]
+WebFetch https://api.github.com/search/repositories?q=dreambot&sort=stars&per_page=20 (2026-09-29; total_count=327)   [_consultas_api/q013_dreambot.txt]
+WebFetch https://api.github.com/search/repositories?q=osbot&sort=stars&per_page=20 (2026-09-29; total_count=311; muitos "OSBot" nao-RS)   [_consultas_api/q014_osbot.txt]
+WebFetch https://api.github.com/search/repositories?q=tribot&sort=stars&per_page=20 (2026-09-29; total_count=300)   [_consultas_api/q015_tribot.txt]
+WebFetch https://api.github.com/search/repositories?q=powerbot OR rsbot OR epicbot OR rspeer&sort=stars&per_page=20 (2026-09-29; total_count=837; muitos nao-RS)   [_consultas_api/q016_powerbot_rsbot_epicbot_rspeer.txt]
+WebFetch https://api.github.com/search/repositories?q=osrs server OR "oldschool server" OR "osrs emulator"&sort=stars&per_page=20 (2026-09-29; total_count=6163; OR amplo)   [_consultas_api/q017_osrs_server.txt]
+WebFetch https://api.github.com/search/repositories?q=near-reality OR nearreality OR "near reality"&sort=updated&per_page=20 (2026-09-29; total_count=61, maioria ruido)   [_consultas_api/q018_near_reality.txt]
+WebFetch https://api.github.com/search/repositories?q=user:near-reality-com&sort=updated&per_page=50 (2026-09-29; total_count=3)   [_consultas_api/q018_near_reality.txt]
+WebFetch https://api.github.com/search/repositories?q=elvarg&sort=stars&per_page=20 (2026-09-29; total_count=29)   [_consultas_api/q019_elvarg.txt]
+WebFetch https://api.github.com/search/repositories?q=osrsbox OR osrsreboxed OR "osrs cache" OR "osrs-cache"&sort=stars&per_page=20 (2026-09-29; total_count=60)   [_consultas_api/q020_osrsbox_cache.txt]
+WebFetch https://api.github.com/search/repositories?q=osrsreboxed OR "osrs items" OR "osrs drop table" OR "osrs wiki scraper"&sort=stars&per_page=20 (2026-09-29; total_count=48)   [_consultas_api/q021_items_drops_wiki.txt]
+WebFetch https://api.github.com/search/repositories?q=pathfinding runescape OR pathfinder osrs OR collision osrs&sort=stars&per_page=20 (2026-09-29; total_count=6)   [_consultas_api/q022_pathfinding.txt]
+WebFetch https://api.github.com/search/repositories?q=awesome in:name runescape OR ... runelite&sort=stars (2026-09-29; total_count=1)   [_consultas_api/q023_awesome_osrsreboxed_openosrs.txt]
+WebFetch https://api.github.com/search/repositories?q=osrsreboxed-db+in:name (2026-09-29; total_count=1)   [_consultas_api/q023_awesome_osrsreboxed_openosrs.txt]
+WebFetch https://api.github.com/search/repositories?q=unethicalite OR openosrs OR "devious client" OR "storm client" OR "hoot client"&sort=stars (2026-09-29; total_count=203)   [_consultas_api/q023_awesome_osrsreboxed_openosrs.txt]
+WebFetch https://api.github.com/search/repositories?q=topic:runelite&sort=stars&per_page=20 (2026-09-29; total_count=179)   [_consultas_api/q024_topic_runelite_stars_osrs_stars.txt]
+WebFetch https://api.github.com/search/repositories?q=topic:osrs&sort=stars&per_page=20 (2026-09-29; total_count=475)   [_consultas_api/q024_topic_runelite_stars_osrs_stars.txt]
+WebFetch https://api.github.com/search/repositories?q=unethicalite+in:name&sort=updated&per_page=20 (2026-09-29; total_count=15)   [_consultas_api/q024_topic_runelite_stars_osrs_stars.txt]
+WebFetch https://api.github.com/search/repositories?q=user:rsmod user:blurite user:openrs2 user:Parabot user:OSRSB&sort=updated&per_page=20 (2026-09-29; total_count=48; pagina 1)   [_consultas_api/q025_orgs_rsmod_blurite_openrs2_parabot_osrsb_p1.txt]
+WebFetch https://api.github.com/search/repositories?q=user:chsami user:Skretzo user:osrs-pathfinding user:Explv user:Zoinkwiz&sort=updated&per_page=20 (2026-09-29; total_count=48; pagina 1)   [_consultas_api/q026_orgs_chsami_skretzo_pathfinding_explv_zoinkwiz_p1.txt]
+WebFetch https://api.github.com/search/repositories?q=user:rsmod user:blurite user:openrs2 user:Parabot user:OSRSB&sort=updated&per_page=20&page=2 (2026-09-29)   [_consultas_api/q027_orgs_p2_kronos_topic_runescape.txt]
+WebFetch https://api.github.com/search/repositories?q=kronos+language:java&sort=stars&per_page=20 (2026-09-29; total_count=142, maioria ruido)   [_consultas_api/q027_orgs_p2_kronos_topic_runescape.txt]
+WebFetch https://api.github.com/search/repositories?q=topic:runescape&sort=stars&per_page=20 (2026-09-29; total_count=597)   [_consultas_api/q027_orgs_p2_kronos_topic_runescape.txt]
+WebFetch https://api.github.com/search/repositories?q="tormented demon" OR "tormented demons" OR "gemstone crab" OR "chaos altar"&sort=updated&per_page=20 (2026-09-29; total_count=24)   [_consultas_api/q028_td_gemcrab_chaosaltar.txt]
+WebFetch https://api.github.com/search/repositories?q=cannonball OR chinchompa OR "stall thieving" OR "thieving stall" osrs&sort=updated (2026-09-29; OR amplo virou "osrs"; so ruido)   [_consultas_api/q028_td_gemcrab_chaosaltar.txt]
+WebFetch https://api.github.com/search/repositories?q=PiggyPlugins in:name OR EthanVannPlugins in:name OR JRPlugins in:name&sort=updated (2026-09-29; total_count=10)   [_consultas_api/q029_piggy_microbot_readme_kraken.txt]
+WebFetch https://api.github.com/search/repositories?q=microbot+in:readme+language:java+-user:chsami&sort=updated&per_page=20 (paginas 1-2) (2026-09-29; total_count=40)   [_consultas_api/q029_piggy_microbot_readme_kraken.txt]
+WebFetch https://api.github.com/search/repositories?q=user:weirdgloop user:osrs-wiki user:RuneStar user:abextm user:mejrs&sort=stars&per_page=20 (2026-09-29; total_count=95)   [_consultas_api/q030_orgs_data.txt]
+WebFetch https://api.github.com/search/repositories?q=[fork:true+]repo:A+repo:B+... (lotes; 2026-09-29)   [_consultas_api/q031_repo_batches.txt]
+WebFetch https://api.github.com/search/repositories?q=fork:true+repo:jarromie/open-osrs+repo:RSPSi/RSPSi+repo:Parabot/Parabot-317-API-Minified+repo:midek1/microbotrsps+repo:a-mo3/ccscripts-public+repo:Joshua-F/osrs-dumps (2026-09-29)   [_consultas_api/q031_repo_batches.txt]
+WebFetch https://api.github.com/repos/jarromie/open-osrs (2026-09-29) -> redireciona para kilotech/open-osrs   [_consultas_api/q031_repo_batches.txt]
+WebFetch https://api.github.com/search/repositories?q=fork:true+repo:Kraken-Plugins/shortest-path+repo:Kraken-Plugins/kraken-api (2026-09-29)   [_consultas_api/q031_repo_batches.txt]
+WebFetch https://github.com/Skretzo/shortest-path  (página; estrelas/forks/licença)
+WebFetch https://api.github.com/search/repositories?q=topic:runescape-bot&sort=stars&order=desc&per_page=50  (0 resultados)
+WebFetch https://api.github.com/search/repositories?q=microbot+plugins+osrs&sort=updated&order=desc&per_page=20  (0 resultados)
+WebFetch https://api.github.com/repos/chsami/Microbot/forks?sort=newest&per_page=20  (403; substituído por busca fork:only)
+WebFetch https://api.github.com/search/repositories?q=kronos+osrs+OR+kronos+rsps+OR+kronos+runescape&sort=stars  (0 resultados)
+WebFetch https://api.github.com/search/repositories?q=kronos+OR+elvarg+OR+zenyte+rsps&sort=stars  (OR amplo; só RSPSi/RSPSi aproveitado)
+WebFetch https://api.github.com/search/repositories?q="rsps" "random event" OR "rsps" prestige OR "rsps" "bank presets"&sort=stars  (0 resultados)
+WebFetch https://api.github.com/search/repositories?q=awesome+runescape+OR+awesome-osrs+OR+awesome-rsps+OR+awesome-runelite&sort=stars  (OR amplo; ruído)
+WebFetch https://api.github.com/search/repositories?q=user:rsmod+OR+user:blurite+OR+...  (422: OR entre user: não aceito; refeito sem OR)
+WebFetch https://api.github.com/search/repositories?q=user:chsami+OR+user:Skretzo+OR+...  (422; refeito sem OR)
+WebFetch https://api.github.com/search/repositories?q=rs-sdk+OR+"runescape automation"+OR+"osrs automation"&sort=stars  (só MaxBittker/rs-sdk relevante)
+WebFetch https://api.github.com/search/repositories?q=kraken+runelite+OR+kraken-api+OR+kraken+osrs  (0 resultados)
+WebFetch https://grep.app/api/search?q=transports.tsv  (bloqueado pela política de rede; busca de código indisponível)
+
+WebSearch (busca web):
+  "github runelite plugin automation framework menuAction WorldView 2025"
+  "github RSPS bot client runelite based open source scripts private server"
+  "github OSRS server emulator revision 230 kotlin open source rsmod alternative 2025"
+  "github osrs web walker transports doors teleports dataset json osrs pathfinding collision map"
+  "github runelite automation api plugin framework 2026 "client.menuAction" OR "invokeMenuAction" bank inventory npc utils"
+  "github OpenRune OSRS server kotlin 2025 rsps source"
+  "github runelite plugin unit test mock Client Mockito Guice BoundFieldModule example plugin test harness"
+
+=== 3. Abertura das árvores (sem blobs, sem checkout) ===
+Script open_tree.sh:
+#!/usr/bin/env bash
+# Abre a árvore de um repositório público via git (clone parcial sem blobs, sem checkout, profundidade 1).
+# Uso: open_tree.sh owner/repo
+set -u
+repo="$1"
+name="${repo/\//__}"
+base=/home/user/survey
+d="$base/trees/$name.git"
+out="$base/meta/$name.txt"
+[ -s "$out" ] && grep -q '^status=ok' "$out" && exit 0
+rm -rf "$d"
+start=$(date +%s)
+if GIT_LFS_SKIP_SMUDGE=1 timeout 600 git clone --quiet --bare --filter=blob:none --depth 1 "https://github.com/$repo" "$d" 2> "$base/meta/$name.err"; then
+  {
+    echo "status=ok"
+    echo "repo=$repo"
+    echo "collected_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    echo "default_branch=$(git -C "$d" symbolic-ref --short HEAD 2>/dev/null)"
+    git -C "$d" log -1 --format='head_commit=%H%nhead_date=%cI%nhead_subject=%s' HEAD
+    echo "n_files=$(git -C "$d" ls-tree -r --name-only HEAD | wc -l)"
+    echo "clone_secs=$(( $(date +%s) - start ))"
+  } > "$out"
+  git -C "$d" ls-tree -r --name-only HEAD > "$base/trees/$name.files"
+else
+  { echo "status=fail"; echo "repo=$repo"; echo "collected_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"; echo "error=$(tr '\n' ' ' < "$base/meta/$name.err" | cut -c1-300)"; } > "$out"
+fi
+Execução para os 254 candidatos da busca: tail -n +2 candidatos.tsv | cut -f1 > repos.txt && xargs -P 4 -n 1 ./open_tree.sh < repos.txt
+Depois, durante a análise: ./open_tree.sh Kraken-Plugins/shortest-path; ./open_tree.sh NubeBuster/OsrsBot; ./open_tree.sh filpod/OsrsBot; ./open_tree.sh GigiaJ/OsrsBot
+
+=== 4. Triagem (licença lida do arquivo, README, binários) ===
+python3 triage.py   # git cat-file -p HEAD:<LICENSE*> e HEAD:<README*> por árvore; lista *.exe *.dll *.jar *.bat *.cmd *.ps1 *.vbs *.scr pelos nomes de arquivo
+python3 (re-detecção de licença com espaços normalizados e pelo título GPL/LGPL/AGPL)
+python3 (re-varredura dos READMEs por mega.nz|mediafire|drive.google|dropbox|anonfiles|gofile|pixeldrain|"disable antivirus")
+
+=== 5. Histórico do Microbot e do Microbot-Hub (comparação com 26/08/2026) ===
+GIT_LFS_SKIP_SMUDGE=1 git clone --quiet --bare --filter=blob:none --shallow-since=2026-08-15 https://github.com/chsami/Microbot-Hub hist/chsami__Microbot-Hub.git
+GIT_LFS_SKIP_SMUDGE=1 git clone --quiet --bare --filter=blob:none --shallow-since=2026-08-15 https://github.com/chsami/Microbot hist/chsami__Microbot.git
+git -C hist/chsami__Microbot-Hub.git fetch --quiet --filter=blob:none --shallow-since=2026-05-01 origin '+refs/heads/*:refs/heads/*'
+git -C hist/chsami__Microbot-Hub.git log --first-parent --format="%h %cI %s"
+git -C hist/chsami__Microbot-Hub.git ls-tree -r --name-only <2eb8c89|64d1d0f|b506676|4cb8198> | grep -c "\.java$"
+git -C hist/chsami__Microbot-Hub.git diff --name-status 2eb8c89 4cb8198; git -C hist/chsami__Microbot-Hub.git log --no-merges 2eb8c89..4cb8198
+git -C hist/chsami__Microbot.git log --first-parent --format="%h %cI %s" 56c423b..3032e97
+git -C hist/chsami__Microbot.git log --no-merges --since=2026-08-26T10:08:00Z --format="%h %cs %an | %s"
+git -C hist/chsami__Microbot.git diff --name-status|--shortstat 56c423b 3032e97 -- runelite-client/src/main/java/net/runelite/client/plugins/microbot runelite-client/src/test/java/net/runelite/client/plugins/microbot runelite-api
+
+=== 6. Clones (log gravado pelo clone_all.sh no momento da execução) ===
+# --- clones (executados em 2026-09-29T07:28:17Z, container Linux da sessão) ---
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --no-checkout https://github.com/chsami/Microbot '/home/user/Veridia/ref/github/chsami__Microbot'
+git -C '/home/user/Veridia/ref/github/chsami__Microbot' sparse-checkout set --no-cone '/LICENSE' '/README.md' '/*.gradle*' '/runelite-client/build.gradle.kts' '/runelite-client/build.gradle' '/runelite-client/src/main/java/net/runelite/client/plugins/microbot/' '/runelite-client/src/test/java/net/runelite/client/plugins/microbot/' '/runelite-client/src/main/resources/net/runelite/client/plugins/microbot/' 
+GIT_LFS_SKIP_SMUDGE=1 git -C '/home/user/Veridia/ref/github/chsami__Microbot' checkout main
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/chsami/Microbot-Hub '/home/user/Veridia/ref/github/chsami__Microbot-Hub'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/OSRSB/OsrsBot '/home/user/Veridia/ref/github/OSRSB__OsrsBot'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/Kraken-Plugins/kraken-api '/home/user/Veridia/ref/github/Kraken-Plugins__kraken-api'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/Kraken-Plugins/kraken-example-plugin '/home/user/Veridia/ref/github/Kraken-Plugins__kraken-example-plugin'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/Jrod7938/JRPlugins '/home/user/Veridia/ref/github/Jrod7938__JRPlugins'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --no-checkout https://github.com/jbx5/devious-client '/home/user/Veridia/ref/github/jbx5__devious-client'
+git -C '/home/user/Veridia/ref/github/jbx5__devious-client' sparse-checkout set --no-cone '/LICENSE' '/README.md' '/runelite-client/src/main/java/net/unethicalite/' '/cache/src/main/java/net/runelite/cache/CollisionMapDumper.java' 
+GIT_LFS_SKIP_SMUDGE=1 git -C '/home/user/Veridia/ref/github/jbx5__devious-client' checkout master
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/Skretzo/shortest-path '/home/user/Veridia/ref/github/Skretzo__shortest-path'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/mich3lam/runelite-gps-plugin '/home/user/Veridia/ref/github/mich3lam__runelite-gps-plugin'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/itsdax/Runescape-Web-Walker-Engine '/home/user/Veridia/ref/github/itsdax__Runescape-Web-Walker-Engine'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/midek1/microbotrsps '/home/user/Veridia/ref/github/midek1__microbotrsps'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/Parabot/Parabot-317-API-Minified '/home/user/Veridia/ref/github/Parabot__Parabot-317-API-Minified'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/Parabot/Randoms '/home/user/Veridia/ref/github/Parabot__Randoms'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/a-mo3/ccscripts-public '/home/user/Veridia/ref/github/a-mo3__ccscripts-public'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --no-checkout https://github.com/GregHib/void '/home/user/Veridia/ref/github/GregHib__void'
+git -C '/home/user/Veridia/ref/github/GregHib__void' sparse-checkout set --no-cone '/LICENSE' '/README.md' '/game/src/main/kotlin/content/activity/event/random/' '/game/src/test/kotlin/content/activity/event/random/' '/game/src/main/kotlin/content/skill/thieving/' '/game/src/test/kotlin/content/skill/thieving/' '/data/activity/event/random/' '/data/skill/thieving/' '/data/bot/' '/game/src/main/kotlin/content/bot/' '/game/src/test/kotlin/FakeRandom.kt' '/docs/' 
+GIT_LFS_SKIP_SMUDGE=1 git -C '/home/user/Veridia/ref/github/GregHib__void' checkout main
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/AlterRSPS/Alter '/home/user/Veridia/ref/github/AlterRSPS__Alter'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/rsmod/rsmod '/home/user/Veridia/ref/github/rsmod__rsmod'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/OpenRune/OpenRune-Server '/home/user/Veridia/ref/github/OpenRune__OpenRune-Server'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --no-checkout https://github.com/runelite/runelite '/home/user/Veridia/ref/github/runelite__runelite'
+git -C '/home/user/Veridia/ref/github/runelite__runelite' sparse-checkout set --no-cone '/LICENSE' '/README.md' '/runelite-api/src/main/java/net/runelite/api/' '/runelite-client/src/main/java/net/runelite/client/plugins/fishing/' '/runelite-client/src/test/java/net/runelite/client/plugins/fishing/' '/runelite-client/src/main/java/net/runelite/client/plugins/hunter/' '/runelite-client/src/test/java/net/runelite/client/plugins/hunter/' '/runelite-client/src/main/java/net/runelite/client/plugins/mining/' '/runelite-client/src/test/java/net/runelite/client/plugins/mining/' '/runelite-client/src/main/java/net/runelite/client/plugins/woodcutting/' '/runelite-client/src/test/java/net/runelite/client/plugins/woodcutting/' '/runelite-client/src/main/java/net/runelite/client/plugins/randomevents/' '/runelite-client/src/test/java/net/runelite/client/plugins/randomevents/' '/runelite-client/src/main/java/net/runelite/client/plugins/idlenotifier/' '/runelite-client/src/test/java/net/runelite/client/plugins/idlenotifier/' '/runelite-client/src/main/java/net/runelite/client/plugins/cannon/' '/runelite-client/src/test/java/net/runelite/client/plugins/cannon/' '/runelite-client/src/main/java/net/runelite/client/plugins/motherlode/' '/runelite-client/src/test/java/net/runelite/client/plugins/motherlode/' '/runelite-client/src/main/java/net/runelite/client/plugins/blastfurnace/' '/runelite-client/src/test/java/net/runelite/client/plugins/blastfurnace/' '/runelite-client/src/main/java/net/runelite/client/plugins/npchighlight/' '/runelite-client/src/test/java/net/runelite/client/plugins/npchighlight/' '/runelite-client/src/main/java/net/runelite/client/plugins/grounditems/' '/runelite-client/src/test/java/net/runelite/client/plugins/grounditems/' '/runelite-client/src/main/java/net/runelite/client/plugins/specialcounter/' '/runelite-client/src/test/java/net/runelite/client/plugins/specialcounter/' '/runelite-client/src/main/java/net/runelite/client/plugins/prayer/' '/runelite-client/src/test/java/net/runelite/client/plugins/prayer/' '/runelite-client/src/main/java/net/runelite/client/plugins/bank/' '/runelite-client/src/test/java/net/runelite/client/plugins/bank/' '/runelite-client/src/main/java/net/runelite/client/plugins/banktags/' '/runelite-client/src/test/java/net/runelite/client/plugins/banktags/' '/runelite-client/src/main/java/net/runelite/client/plugins/implings/' '/runelite-client/src/test/java/net/runelite/client/plugins/implings/' '/runelite-client/src/main/java/net/runelite/client/plugins/agility/' '/runelite-client/src/test/java/net/runelite/client/plugins/agility/' 
+GIT_LFS_SKIP_SMUDGE=1 git -C '/home/user/Veridia/ref/github/runelite__runelite' checkout master
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/Zoinkwiz/quest-helper '/home/user/Veridia/ref/github/Zoinkwiz__quest-helper'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --no-checkout https://github.com/0xNeffarion/osrsreboxed-db '/home/user/Veridia/ref/github/0xNeffarion__osrsreboxed-db'
+git -C '/home/user/Veridia/ref/github/0xNeffarion__osrsreboxed-db' sparse-checkout set --no-cone '/LICENSE' '/README.md' '/docs/*.json' '/osrsreboxed/' '/scripts/' '/data/' 
+GIT_LFS_SKIP_SMUDGE=1 git -C '/home/user/Veridia/ref/github/0xNeffarion__osrsreboxed-db' checkout master
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --no-checkout https://github.com/weirdgloop/osrs-dps-calc '/home/user/Veridia/ref/github/weirdgloop__osrs-dps-calc'
+git -C '/home/user/Veridia/ref/github/weirdgloop__osrs-dps-calc' sparse-checkout set --no-cone '/LICENSE' '/README.md' '/cdn/json/' '/scripts/' 
+GIT_LFS_SKIP_SMUDGE=1 git -C '/home/user/Veridia/ref/github/weirdgloop__osrs-dps-calc' checkout main
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/pajlads/DinkPlugin '/home/user/Veridia/ref/github/pajlads__DinkPlugin'
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/samnooby/SessionTracker '/home/user/Veridia/ref/github/samnooby__SessionTracker'
+# --- fim dos clones 2026-09-29T07:29:11Z ---
+git -C '/home/user/Veridia/ref/github/runelite__runelite' sparse-checkout add '/runelite-client/src/main/java/net/runelite/client/game/' '/runelite-client/src/test/java/net/runelite/client/game/' '/runelite-client/src/main/java/net/runelite/client/plugins/woodcutting/config/'
+git -C /home/user/Veridia/ref/github/Skretzo__shortest-path fetch --quiet --depth=60 origin master
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --no-checkout https://github.com/Joshua-F/osrs-dumps '/home/user/Veridia/ref/github/Joshua-F__osrs-dumps'
+git -C '/home/user/Veridia/ref/github/Joshua-F__osrs-dumps' sparse-checkout set --no-cone '/config/' '/.git-blame-ignore-revs'
+GIT_LFS_SKIP_SMUDGE=1 git -C '/home/user/Veridia/ref/github/Joshua-F__osrs-dumps' checkout master
+
+=== 7. Varreduras nos clones ===
+find <clone> -path <clone>/.git -prune -o -type f \( -iname '*.exe' -o -iname '*.dll' -o -iname '*.jar' -o -iname '*.bat' -o -iname '*.cmd' -o -iname '*.ps1' -o -iname '*.vbs' -o -iname '*.scr' \) -print
+grep -rIl --include=*.java -e 'com.allatori' -e 'ZKM' <clone>        # anotações de ofuscador
+find <clone> \( -name '*.java' -o -name '*.kt' \) | xargs awk 'length($0)>3000'   # linhas gigantes: só base64 de imagens e tabelas de dados
+find <clone> -path '*/src/test/*' -type f | wc -l   # contagem de arquivos de teste citada no relatório
+grep -rn 'prestige|presets|noted|unnote|Proxy.newProxyInstance|BoundFieldModule|setAccessible|menuAction(' <clones>   # buscas de código locais
+
+=== 8. Leituras pontuais em repositórios NÃO clonados (git cat-file na árvore sem blobs) ===
+git -C trees/midek1__microbotrsps.git cat-file -p HEAD:README.md   (depois o repositório foi clonado)
+git -C trees/dQw4w9WgXcQ__osrs-pathfinder.git cat-file -p HEAD:osrs-pathfinder/graph-generation/src/main/java/dev/dqw4w9wgxcq/pathfinder/graphgeneration/link/{DoorLinks,StairLinks,FindLinks}.java
+git -C trees/dQw4w9WgXcQ__osrs-pathfinder.git cat-file -p HEAD:README.md
+git -C trees/K0KS13__afk-companion.git cat-file -p HEAD:src/main/java/com/jaka/afkcompanion/{AfkCompanionPlugin,gemstonecrab/GemstoneCrabTracker}.java
+git -C trees/ShaneeexD__GemstoneCrabTimer.git cat-file -p HEAD:src/main/java/com/gimserenity/{Constants,GemstoneCrabTimerPlugin}.java
+git -C trees/TheRealGuru__tormented-demons.git cat-file -p HEAD:src/main/java/com/example/ExamplePlugin.java
+git -C trees/osrsbox__osrsbox-db.git cat-file -p HEAD:README.md; git -C trees/0xNeffarion__osrsreboxed-db.git cat-file -p HEAD:README.md
+git -C trees/runelite__plugin-hub.git cat-file -p HEAD:plugins/gemstone-crab-alert
+git -C trees/GregHib__void.git cat-file -p HEAD:README.md; git -C trees/slyautomation__osrs_basic_botting_functions.git cat-file -p HEAD:README.md
+git -C trees/<spider355__tutorial-island-bot|Parabot__Parabot-317-API-Minified>.git cat-file -p HEAD:LICENSE*
+
+=== 9. Geração dos entregáveis ===
+python3 merge_meta.py; python3 gen_csv.py (INDICE.csv); python3 gen_origem.py (ORIGEM.txt); python3 gen_report.py (relatório; confere que todo caminho citado existe)
+
+=== 10. Reproduzir no Windows (PowerShell) — mesmos commits ===
+Pré-requisito: Git for Windows 2.25+ (sparse-checkout). Os ORIGEM.txt já estão nas pastas deste repositório (Veridia\ref\github\<dono>__<repo>\ORIGEM.txt).
+Copie Veridia\ref\github para C:\Users\Claudio 2.0\Desktop\Veridia\ref\github e, em cada subpasta, rode os comandos do final do ORIGEM.txt. Resumo:
+  cd "C:\Users\Claudio 2.0\Desktop\Veridia\ref\github\<dono>__<repo>"
+  git init; git remote add origin https://github.com/<dono>/<repo>
+  (só para clones parciais) git sparse-checkout set --no-cone <padrões do ORIGEM.txt>
+  git fetch --depth 1 [--filter=blob:none] origin <commit do ORIGEM.txt>; git checkout FETCH_HEAD
+Testado no container em 2026-09-29 com Skretzo/shortest-path (completo) e weirdgloop/osrs-dps-calc (sparse): ok; o ORIGEM.txt pré-existente é preservado.

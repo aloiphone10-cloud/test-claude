@@ -1,0 +1,18 @@
+# query: https://api.github.com/search/repositories?q=dreambot&sort=stars&per_page=20 (2026-09-29; total_count=327)
+nucleuswarlockshovel/yjjvmzcl|60|0|2026-09-24T11:39:45Z|false|null|3|null|false|(copia descricao de RunescapeGPT; 3 KB; suspeito)
+pashpashpash/RunescapeBots|55|11|2022-11-24T03:20:54Z|false|null|5065|Java|false|OSRS bot projects
+harmindersinghnijjar/RunescapeGPT|28|4|2024-01-30T02:52:38Z|false|null|42|Python|false|GPT para DreamBot
+NotSinan/DreamBotQuester|26|3|2023-04-30T22:30:05Z|false|MIT|838|Java|false|DreamBot quest library
+a-mo3/ccscripts-public|22|15|2026-08-30T03:56:58Z|false|null|1899|Java|false|RIP DreamBot ... 20% of the sdn
+Nezzima/DreamBot|11|5|2023-01-12T20:22:43Z|false|null|136|Java|false|Dreambot scripts
+LostVirt/Dreambot-Tree-Branch-Framework|10|4|2021-04-17T11:28:56Z|false|null|16|Java|false|tree branch framework for dreambot
+dreambot-develop/DreamBot-v2|8|1|2020-07-17T12:48:17Z|false|Apache-2.0|1607|JavaScript|false|(bot de outro jogo)
+harmindersinghnijjar/harminders-edgeville-yew-chopper-runelite-plugin|8|0|2025-03-10T20:55:26Z|false|null|25|Java|false|RuneLite plugin overlays + API
+JakeDahl/Dreambot-Scripting-MCP|7|5|2025-09-05T22:50:50Z|false|null|9|Python|false|MCP docs DreamBot
+viktorstiunovs/osrs-dreambot-scripts|7|5|2021-02-09T12:31:54Z|false|null|53|Java|false|OSRS DreamBot scripts
+adambrodin/osrsbots|5|3|2021-02-03T03:28:23Z|false|null|20071|Java|false|OSBot & DreamBot scripts
+teundeclercq/Krugan-Quester|5|0|2020-10-27T12:30:59Z|false|null|193|Java|false|Questing DreamBot
+ignasck/dbscripts|5|0|2025-06-04T11:48:08Z|false|null|27|Java|false|OSRS scripts Dreambot
+LostVirt/DreamDax|4|0|2021-06-11T09:44:55Z|false|null|41|Java|false|DaxWalker Ported to Dreambot
+notoriouspp/OpenSource-Cooking|4|0|2015-02-06T07:04:44Z|false|GPL-2.0|123|Java|false|Dreambot Cooking script
+mogyiii/MOGY-Woodcutter-full-for-dreambot|3|2|2019-04-08T18:36:38Z|false|null|251|Java|false|Dreambot Woodcutter
